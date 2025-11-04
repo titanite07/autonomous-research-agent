@@ -42,10 +42,10 @@ ENV/
 *.log
 logs/
 
-# Output
-output/
-results/
-reports/
+# Output (root level only, not frontend/src/app pages)
+/output/
+/results/
+/reports/
 
 # Jupyter Notebooks
 .ipynb_checkpoints
