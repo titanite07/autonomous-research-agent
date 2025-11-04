@@ -20,7 +20,8 @@ class ResearchService:
     
     def __init__(self):
         """Initialize the research service"""
-        self.system = AutoGenResearchSystem()
+        # Don't create shared system instance - create per-request to avoid race conditions
+        self.system = None
         self.relevance_calculator = get_relevance_calculator()
     
     def _normalize_paper(self, paper: Dict, source: str = "unknown", query: str = "") -> Dict:
@@ -113,6 +114,9 @@ class ResearchService:
         print(f"   Sources: {', '.join(sources) if sources else 'arxiv, semantic_scholar'}")
         print(f"   Max results: {max_results}")
         
+        # Create a new research system instance for this request (thread-safe)
+        system = AutoGenResearchSystem()
+        
         # Store max_results for filtering later
         self.max_results = max_results
         
@@ -130,12 +134,12 @@ class ResearchService:
         if sources is None:
             sources = ["arxiv", "semantic_scholar"]
             # Check if Springer is available
-            if hasattr(self.system, 'springer_scraper') and self.system.springer_scraper:
+            if hasattr(system, 'springer_scraper') and system.springer_scraper:
                 sources.append("springer")
                 print("✅ Springer source added (API key detected)")
         
         # Use AutoGen system to search with expanded results
-        search_result = self.system.search_papers(
+        search_result = system.search_papers(
             query=query,
             max_results=expanded_max_results,  # Request more papers from each source
             sources=sources
