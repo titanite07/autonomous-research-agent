@@ -13,9 +13,14 @@ alembic>=1.13.0
 psycopg2-binary>=2.9.9  # PostgreSQL adapter
 
 # AUTHENTICATION & SECURITY
-python-jose[cryptography]>=3.3.0  # JWT tokens
+python-jose[cryptography]>=3.3.0  # JWT tokens (legacy, use gRPC)
 passlib[bcrypt]>=1.7.4  # Password hashing
 python-multipart>=0.0.6  # Form data parsing
+
+# GRPC
+grpcio>=1.60.0  # gRPC runtime
+grpcio-tools>=1.60.0  # Protocol buffer compiler
+grpcio-reflection>=1.60.0  # gRPC server reflection
 
 # VECTOR STORES & EMBEDDINGS
 chromadb>=0.4.0

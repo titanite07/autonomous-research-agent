@@ -9,7 +9,7 @@ import os
 # Add parent directory to path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from api.database import Base, engine, test_connection
+from api.database import Base, engine, check_db_connection
 from api.models.db_models import (
     User, ResearchJob, Paper, ResearchJobPaper,
     SavedSearch, SavedPaper, PaperSummary,
@@ -21,7 +21,7 @@ def init_database():
     print("🔧 Initializing database...")
     
     # Test connection first
-    if not test_connection():
+    if not check_db_connection():
         print("❌ Failed to connect to database")
         print("📝 Make sure DATABASE_URL environment variable is set correctly")
         return False

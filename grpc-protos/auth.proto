@@ -1,0 +1,120 @@
+syntax = "proto3";
+
+package auth;
+
+// Authentication Service
+service AuthService {
+  // Register a new user
+  rpc Register(RegisterRequest) returns (AuthResponse);
+  
+  // Login with credentials
+  rpc Login(LoginRequest) returns (AuthResponse);
+  
+  // Validate session token
+  rpc ValidateToken(ValidateTokenRequest) returns (ValidateTokenResponse);
+  
+  // Refresh session token
+  rpc RefreshToken(RefreshTokenRequest) returns (AuthResponse);
+  
+  // Get current user info
+  rpc GetCurrentUser(GetCurrentUserRequest) returns (UserResponse);
+  
+  // Update user profile
+  rpc UpdateUser(UpdateUserRequest) returns (UserResponse);
+  
+  // Logout (invalidate session)
+  rpc Logout(LogoutRequest) returns (LogoutResponse);
+  
+  // Change password
+  rpc ChangePassword(ChangePasswordRequest) returns (StatusResponse);
+}
+
+// Request Messages
+
+message RegisterRequest {
+  string email = 1;
+  string username = 2;
+  string password = 3;
+  string full_name = 4;
+}
+
+message LoginRequest {
+  string username = 1;  // Can be username or email
+  string password = 2;
+}
+
+message ValidateTokenRequest {
+  string session_token = 1;
+}
+
+message RefreshTokenRequest {
+  string refresh_token = 1;
+}
+
+message GetCurrentUserRequest {
+  string session_token = 1;
+}
+
+message UpdateUserRequest {
+  string session_token = 1;
+  string full_name = 2;
+  string avatar_url = 3;
+}
+
+message LogoutRequest {
+  string session_token = 1;
+}
+
+message ChangePasswordRequest {
+  string session_token = 1;
+  string old_password = 2;
+  string new_password = 3;
+}
+
+// Response Messages
+
+message AuthResponse {
+  bool success = 1;
+  string message = 2;
+  string session_token = 3;
+  string refresh_token = 4;
+  User user = 5;
+  int64 expires_at = 6;  // Unix timestamp
+}
+
+message ValidateTokenResponse {
+  bool valid = 1;
+  string user_id = 2;
+  string username = 3;
+  int64 expires_at = 4;
+}
+
+message UserResponse {
+  bool success = 1;
+  string message = 2;
+  User user = 3;
+}
+
+message LogoutResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message StatusResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+// Data Models
+
+message User {
+  string id = 1;
+  string email = 2;
+  string username = 3;
+  string full_name = 4;
+  string avatar_url = 5;
+  bool is_active = 6;
+  bool is_verified = 7;
+  int64 created_at = 8;  // Unix timestamp
+  int64 last_login = 9;  // Unix timestamp
+}

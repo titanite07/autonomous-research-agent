@@ -179,7 +179,7 @@ class AnalysisResult(Base):
     synthesis = Column(Text)
     trends = Column(JSON)
     recommendations = Column(JSON)
-    metadata = Column(JSON)
+    analysis_metadata = Column(JSON)  # Renamed from 'metadata' (reserved word)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     
     # Relationships
