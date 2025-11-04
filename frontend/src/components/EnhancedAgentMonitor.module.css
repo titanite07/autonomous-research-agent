@@ -1,0 +1,7 @@
+.overallProgressBar {
+  transition: width 0.5s ease;
+}
+
+.agentProgressBar {
+  transition: width 0.3s ease;
+}
