@@ -27,7 +27,7 @@ class SpringerScraper(BaseScraper):
         """
         super().__init__(timeout=timeout, delay=1.0)
         self.api_key = api_key
-        self.base_url = "http://api.springernature.com/meta/v2/json"
+        self.base_url = "https://api.springernature.com/meta/v2/json"  # Changed to HTTPS
         
         if not api_key:
             logger.warning("Springer API key not provided. Set SPRINGER_API_KEY environment variable.")
