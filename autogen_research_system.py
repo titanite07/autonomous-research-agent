@@ -1,6 +1,7 @@
 """
 AutoGen Research System - Production Implementation
 Orchestrates multi-agent research using scrapers and LLM analysis
+Version: 1.0.1
 """
 
 import os
