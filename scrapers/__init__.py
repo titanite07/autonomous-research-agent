@@ -3,6 +3,8 @@
 from .base_scraper import BaseScraper, ScrapedPaper
 from .arxiv_scraper import ArxivScraper
 from .scholar_scraper import ScholarScraper
+from .semantic_scholar_scraper import SemanticScholarScraper
+from .springer_scraper import SpringerScraper
 from .scraper_manager import ScraperManager, ScraperSource
 
 __all__ = [
@@ -10,6 +12,8 @@ __all__ = [
     'ScrapedPaper',
     'ArxivScraper',
     'ScholarScraper',
+    'SemanticScholarScraper',
+    'SpringerScraper',
     'ScraperManager',
     'ScraperSource'
 ]
