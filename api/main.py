@@ -29,7 +29,8 @@ app.add_middleware(
         "http://localhost:3000",  # Next.js dev server
         "http://localhost:3001",  # Alternative port
         "https://*.vercel.app",   # Vercel deployment
-        # Add your production domain here
+        "https://autonomous-research-agent-frontend.onrender.com",  # Render frontend
+        "https://*.onrender.com",  # Any Render deployment
     ],
     allow_credentials=True,
     allow_methods=["*"],

@@ -36,7 +36,5 @@ services:
       - key: NODE_VERSION
         value: 20.11.0
       - key: NEXT_PUBLIC_API_URL
-        fromService:
-          type: web
-          name: autonomous-research-agent-backend
+        value: https://autonomous-research-agent-backend.onrender.com
           envVarKey: RENDER_EXTERNAL_URL
