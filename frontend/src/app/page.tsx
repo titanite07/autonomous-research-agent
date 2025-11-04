@@ -6,6 +6,7 @@ import { Search, Zap, Network, BarChart3, FileText, History } from 'lucide-react
 import { researchAPI } from '@/lib/api';
 import type { SearchRequest } from '@/types';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import { AIChatbot } from '@/components/AIChatbot';
 
 export default function HomePage() {
   const router = useRouter();
@@ -342,6 +343,9 @@ export default function HomePage() {
           <span className="text-green-500">$</span> Built with AutoGen, Groq, Next.js, FastAPI
         </div>
       </footer>
+
+      {/* AI Chatbot */}
+      <AIChatbot />
     </div>
   );
 }

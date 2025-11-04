@@ -271,6 +271,15 @@ export const researchAPI = {
     const { data } = await apiClient.get(`/api/v1/network/${jobId}`);
     return data;
   },
+
+  // AI Chat assistant
+  async chat(request: { 
+    message: string; 
+    conversation_history?: Array<{ role: string; content: string }> 
+  }): Promise<{ response: string; suggestions?: string[] }> {
+    const { data } = await apiClient.post('/api/v1/chat', request);
+    return data;
+  },
 };
 
 // WebSocket connection helper

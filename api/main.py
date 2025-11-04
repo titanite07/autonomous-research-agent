@@ -9,7 +9,7 @@ from fastapi.responses import JSONResponse
 import uvicorn
 import os
 
-from api.routes import search, analysis, websocket, history, analytics, reports
+from api.routes import search, analysis, websocket, history, analytics, reports, chat
 from api.middleware.auth import add_auth_middleware
 from api.database import init_db, check_db_connection
 
@@ -40,6 +40,7 @@ app.include_router(analysis.router, prefix="/api/v1", tags=["analysis"])
 app.include_router(history.router, prefix="/api/v1", tags=["history"])
 app.include_router(analytics.router, prefix="/api/v1", tags=["analytics"])
 app.include_router(reports.router, prefix="/api/v1", tags=["reports"])
+app.include_router(chat.router, prefix="/api/v1", tags=["chat"])
 app.include_router(websocket.router, prefix="/ws", tags=["websocket"])
 
 # Root endpoint

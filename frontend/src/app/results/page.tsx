@@ -8,6 +8,7 @@ import { EnhancedAgentMonitor } from '@/components/EnhancedAgentMonitor';
 import { AnalysisButton } from '@/components/AnalysisButton';
 import { ReportPreview } from '@/components/ReportPreview';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import { AIChatbot } from '@/components/AIChatbot';
 import type { SearchResponse, Paper, ResearchStatus } from '@/types';
 
 function ResultsPageContent() {
@@ -436,6 +437,9 @@ function ResultsPageContent() {
           onClose={() => setShowReportPreview(false)}
         />
       )}
+
+      {/* AI Chatbot */}
+      <AIChatbot />
     </div>
   );
 }
