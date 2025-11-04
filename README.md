@@ -659,36 +659,6 @@ See [`markdowns/README.md`](markdowns/README.md) for complete documentation stru
 For questions and support:
 - Open an issue on GitHub
 - Check documentation in [`markdowns/`](markdowns/) folder
-
-## 🗺️ Roadmap & Next Steps
-
-### ✅ Completed (Phase 1-6)
-- ✅ Multi-source paper search (ArXiv, Semantic Scholar)
-- ✅ Vector-based semantic deduplication (ChromaDB)
-- ✅ PDF download and extraction (PyMuPDF)
-- ✅ Citation network analysis (NetworkX)
-- ✅ Knowledge graph integration
-- ✅ **Multi-agent AI system (AutoGen + Groq)**
-
-### 🚀 Next Phases (7-13)
-**See [`NEXT_PHASE.md`](NEXT_PHASE.md) for detailed roadmap and implementation guide!**
-
-**Recommended Next:** Phase 7 - Streamlit Web UI (1-2 weeks)
-- Interactive web interface for non-technical users
-- Real-time agent monitoring and visualization
-- Export functionality (PDF, DOCX, LaTeX)
-- Citation network graphs and analytics
-
-**Other Upcoming Phases:**
-- Phase 8: Advanced visualizations (citation networks, knowledge graphs)
-- Phase 9: FastAPI REST API (production deployment)
-- Phase 10: WebSocket real-time updates
-- Phase 11: Additional scrapers (Google Scholar, PubMed, IEEE)
-- Phase 12: Enhanced PDF processing (tables, figures, equations)
-- Phase 13: Multi-language translation support
-
-**Full Details:** [`ENHANCEMENT_ROADMAP.md`](ENHANCEMENT_ROADMAP.md) (7-phase comprehensive plan)
-
 ---
 
 **Built with ❤️ by researchers, for researchers**
