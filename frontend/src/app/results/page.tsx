@@ -170,15 +170,15 @@ function ResultsPageContent() {
 
   if (error) {
     return (
-      <div className="min-h-screen p-8 font-mono text-green-400 bg-black">
+      <div className="min-h-screen p-4 sm:p-8 font-mono text-green-400 bg-black">
         <div className="max-w-4xl mx-auto">
-          <div className="p-6 bg-black border border-red-500">
-            <p className="mb-4 text-red-400">ERROR: {error}</p>
+          <div className="p-4 sm:p-6 bg-black border border-red-500">
+            <p className="mb-4 text-sm sm:text-base text-red-400 break-words">ERROR: {error}</p>
             <button 
               onClick={() => router.push('/')} 
-              className="px-4 py-2 text-green-400 transition-colors border border-green-500 hover:bg-green-950/30"
+              className="px-3 sm:px-4 py-2 text-sm sm:text-base text-green-400 transition-colors border border-green-500 hover:bg-green-950/30"
             >
-              <ArrowLeft className="inline w-4 h-4 mr-2" />
+              <ArrowLeft className="inline w-3 h-3 sm:w-4 sm:h-4 mr-2" />
               [return to search]
             </button>
           </div>
@@ -189,19 +189,19 @@ function ResultsPageContent() {
 
   if (isLoading || !results) {
     return (
-      <div className="min-h-screen p-8 font-mono text-green-400 bg-black">
-        <div className="max-w-6xl mx-auto space-y-6">
-          <div className="p-6 bg-black border border-green-500">
-            <div className="mb-2 text-lg text-cyan-400">$ research-agent --status</div>
-            <div className="mb-4 text-green-400">Processing Research Query...</div>
-            <div className="mb-6 text-sm text-gray-500">Our AI agents are searching and analyzing papers</div>
+      <div className="min-h-screen p-3 sm:p-8 font-mono text-green-400 bg-black">
+        <div className="max-w-6xl mx-auto space-y-4 sm:space-y-6">
+          <div className="p-4 sm:p-6 bg-black border border-green-500">
+            <div className="mb-2 text-base sm:text-lg text-cyan-400">$ research-agent --status</div>
+            <div className="mb-4 text-sm sm:text-base text-green-400">Processing Research Query...</div>
+            <div className="mb-6 text-xs sm:text-sm text-gray-500">Our AI agents are searching and analyzing papers</div>
             
             <div className="space-y-4">
               <div className="flex items-center justify-center py-8">
-                <Loader2 className="w-8 h-8 text-green-400 animate-spin" />
+                <Loader2 className="w-6 h-6 sm:w-8 sm:h-8 text-green-400 animate-spin" />
               </div>
               
-              <p className="text-sm text-center text-cyan-400">
+              <p className="text-xs sm:text-sm text-center text-cyan-400">
                 Progress: [{status?.progress || 0}%]
               </p>
             </div>
@@ -221,36 +221,37 @@ function ResultsPageContent() {
   }
 
   return (
-    <div className="min-h-screen p-6 font-mono text-green-400 bg-black">
+    <div className="min-h-screen p-3 sm:p-6 font-mono text-green-400 bg-black">
       {/* CLI Header */}
-      <div className="mx-auto mb-6 max-w-7xl">
-        <div className="p-4 border border-green-500 bg-black/80">
-          <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center gap-3">
+      <div className="mx-auto mb-4 sm:mb-6 max-w-7xl">
+        <div className="p-3 sm:p-4 border border-green-500 bg-black/80">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 mb-4">
+            <div className="flex items-center gap-2 sm:gap-3">
               <span className="text-green-500">$</span>
               <button 
                 onClick={() => router.push('/')}
-                className="font-mono text-green-400 bg-transparent border-none cursor-pointer hover:text-green-300 hover:bg-green-950/30"
+                className="font-mono text-sm sm:text-base text-green-400 bg-transparent border-none cursor-pointer hover:text-green-300 hover:bg-green-950/30"
               >
-                <ArrowLeft className="inline w-4 h-4 mr-2" />
+                <ArrowLeft className="inline w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
                 ./new-search.sh
               </button>
             </div>
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-2 sm:gap-3 w-full sm:w-auto">
               <ThemeToggle />
               {analysisResult && (
                 <>
                   <button 
                     onClick={() => setShowReportPreview(true)}
-                    className="flex items-center gap-2 px-3 py-1 text-cyan-400 transition-colors border border-cyan-500 hover:text-cyan-300 hover:bg-cyan-950/30"
+                    className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 text-xs sm:text-sm text-cyan-400 transition-colors border border-cyan-500 hover:text-cyan-300 hover:bg-cyan-950/30"
                   >
-                    <FileText className="w-4 h-4" />
-                    [view report]
+                    <FileText className="w-3 h-3 sm:w-4 sm:h-4" />
+                    <span className="hidden sm:inline">[view report]</span>
+                    <span className="sm:hidden">[view]</span>
                   </button>
                   <select
                     value={exportFormat}
                     onChange={(e) => setExportFormat(e.target.value as 'markdown' | 'latex')}
-                    className="px-3 py-1 text-sm text-green-400 bg-black border border-green-500 focus:outline-none focus:border-green-300"
+                    className="px-2 sm:px-3 py-1 text-xs sm:text-sm text-green-400 bg-black border border-green-500 focus:outline-none focus:border-green-300"
                     aria-label="Export format"
                   >
                     <option value="markdown">Markdown</option>
@@ -258,30 +259,32 @@ function ResultsPageContent() {
                   </select>
                   <button 
                     onClick={() => handleExport(exportFormat)}
-                    className="flex items-center gap-2 px-3 py-1 text-green-400 transition-colors border border-green-500 hover:text-green-300 hover:bg-green-950/30"
+                    className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 text-xs sm:text-sm text-green-400 transition-colors border border-green-500 hover:text-green-300 hover:bg-green-950/30"
                   >
-                    <Download className="w-4 h-4" />
-                    [export]
+                    <Download className="w-3 h-3 sm:w-4 sm:h-4" />
+                    <span className="hidden sm:inline">[export]</span>
+                    <span className="sm:hidden">[exp]</span>
                   </button>
                 </>
               )}
               {!analysisResult && (
-                <div className="px-3 py-1 text-sm text-gray-500 border border-gray-700">
-                  Run analysis first to view report
+                <div className="px-2 sm:px-3 py-1 text-xs sm:text-sm text-gray-500 border border-gray-700">
+                  <span className="hidden sm:inline">Run analysis first to view report</span>
+                  <span className="sm:hidden">Run analysis first</span>
                 </div>
               )}
             </div>
           </div>
           
           {/* Command Prompt */}
-          <div className="space-y-2 text-sm">
-            <div className="flex items-center gap-2">
+          <div className="space-y-2 text-xs sm:text-sm">
+            <div className="flex flex-wrap items-center gap-1 sm:gap-2">
               <span className="text-green-500">→</span>
               <span className="text-cyan-400">research-agent</span>
               <span className="text-gray-500">search</span>
-              <span className="text-yellow-300">&quot;{results.query}&quot;</span>
+              <span className="text-yellow-300 break-all">&quot;{results.query}&quot;</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-1 sm:gap-2">
               <span className="text-green-500">✓</span>
               <span className="text-gray-400">Found:</span>
               <span className="text-white">{results.total_papers || 0}</span>
@@ -299,22 +302,22 @@ function ResultsPageContent() {
 
       {/* Analysis Panel */}
       {selectedPapers.length > 0 && (
-        <div className="mx-auto mb-6 max-w-7xl">
-          <div className="p-4 border border-cyan-500 bg-cyan-950/10">
-            <div className="flex items-center justify-between mb-4">
-              <div className="font-mono text-cyan-400">
+        <div className="mx-auto mb-4 sm:mb-6 max-w-7xl">
+          <div className="p-3 sm:p-4 border border-cyan-500 bg-cyan-950/10">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 mb-4">
+              <div className="font-mono text-xs sm:text-sm text-cyan-400 break-all">
                 <span className="text-green-500">$</span> research-agent analyze --papers={selectedPapers.length}
               </div>
-              <div className="flex gap-2">
+              <div className="flex gap-2 w-full sm:w-auto">
                 <button
                   onClick={selectAllPapers}
-                  className="px-3 py-1 text-xs transition-colors border border-cyan-500 text-cyan-400 hover:bg-cyan-950/30"
+                  className="flex-1 sm:flex-none px-3 py-1 text-xs transition-colors border border-cyan-500 text-cyan-400 hover:bg-cyan-950/30"
                 >
                   Select All
                 </button>
                 <button
                   onClick={clearSelection}
-                  className="px-3 py-1 text-xs text-red-400 transition-colors border border-red-500 hover:bg-red-950/30"
+                  className="flex-1 sm:flex-none px-3 py-1 text-xs text-red-400 transition-colors border border-red-500 hover:bg-red-950/30"
                 >
                   Clear
                 </button>
@@ -330,12 +333,12 @@ function ResultsPageContent() {
 
       {/* Analysis Results Display */}
       {analysisResult && (
-        <div className="mx-auto mb-6 max-w-7xl">
-          <div className="p-6 border border-green-500 bg-black/80">
-            <h2 className="mb-4 font-mono text-lg text-green-400">
+        <div className="mx-auto mb-4 sm:mb-6 max-w-7xl">
+          <div className="p-4 sm:p-6 border border-green-500 bg-black/80">
+            <h2 className="mb-4 font-mono text-base sm:text-lg text-green-400">
               <span className="text-green-500">$</span> analysis-results.json
             </h2>
-            <pre className="p-4 overflow-x-auto text-xs text-green-300 bg-black border border-green-500/30">
+            <pre className="p-3 sm:p-4 overflow-x-auto text-[10px] sm:text-xs text-green-300 bg-black border border-green-500/30">
               {JSON.stringify(analysisResult, null, 2)}
             </pre>
           </div>
@@ -343,16 +346,16 @@ function ResultsPageContent() {
       )}
 
       {/* CLI Papers Output */}
-      <div className="mx-auto space-y-4 max-w-7xl">
+      <div className="mx-auto space-y-3 sm:space-y-4 max-w-7xl">
         {results.papers && results.papers.length > 0 ? (
           results.papers.map((paper: Paper, index: number) => (
             <div 
               key={paper.id} 
-              className="p-4 transition-colors border border-green-500 bg-black/60 hover:bg-green-950/20 group"
+              className="p-3 sm:p-4 transition-colors border border-green-500 bg-black/60 hover:bg-green-950/20 group"
             >
               {/* Paper Number & Title */}
-              <div className="flex items-start gap-4 mb-3">
-                <div className="flex items-center gap-3 font-bold text-green-500 shrink-0">
+              <div className="flex items-start gap-2 sm:gap-4 mb-3">
+                <div className="flex items-center gap-2 sm:gap-3 font-bold text-green-500 shrink-0">
                   <input
                     type="checkbox"
                     checked={selectedPapers.includes(paper.id)}
@@ -360,15 +363,15 @@ function ResultsPageContent() {
                     className="w-4 h-4 cursor-pointer accent-green-500"
                     aria-label={`Select paper: ${paper.title}`}
                   />
-                  <span>[{(index + 1).toString().padStart(2, '0')}]</span>
+                  <span className="text-sm sm:text-base">[{(index + 1).toString().padStart(2, '0')}]</span>
                 </div>
-                <div className="flex-1">
-                  <h3 className="mb-2 text-lg font-semibold text-white transition-colors group-hover:text-green-300">
+                <div className="flex-1 min-w-0">
+                  <h3 className="mb-2 text-sm sm:text-lg font-semibold text-white transition-colors group-hover:text-green-300 break-words">
                     {paper.title}
                   </h3>
                   
                   {/* Metadata Line */}
-                  <div className="flex flex-wrap items-center gap-4 mb-3 text-sm">
+                  <div className="flex flex-wrap items-center gap-2 sm:gap-4 mb-3 text-xs sm:text-sm">
                     <span className="text-gray-400">
                       <span className="text-cyan-400">year:</span> {paper.year}
                     </span>
@@ -382,32 +385,32 @@ function ResultsPageContent() {
                       paper.relevance_score >= 0.75 ? 'text-yellow-400' :
                       'text-orange-400'
                     }`}>
-                      <span className="text-cyan-400">relevance:</span> {(paper.relevance_score * 100).toFixed(1)}%
+                      <span className="text-cyan-400">rel:</span> {(paper.relevance_score * 100).toFixed(1)}%
                     </span>
                     <span className="text-gray-600">|</span>
                     <span className="text-gray-400">
-                      <span className="text-cyan-400">source:</span> {paper.source}
+                      <span className="text-cyan-400">src:</span> {paper.source}
                     </span>
                   </div>
                   
                   {/* Authors */}
-                  <div className="mb-3 text-sm text-gray-400">
+                  <div className="mb-3 text-xs sm:text-sm text-gray-400 break-words">
                     <span className="text-cyan-400">authors:</span> {paper.authors.slice(0, 4).join(', ')}
                     {paper.authors.length > 4 && <span className="text-gray-500"> (+{paper.authors.length - 4} more)</span>}
                   </div>
                   
                   {/* Abstract */}
-                  <div className="pl-4 mb-3 text-sm text-gray-300 border-l-2 border-green-900">
+                  <div className="pl-3 sm:pl-4 mb-3 text-xs sm:text-sm text-gray-300 border-l-2 border-green-900 break-words">
                     {paper.abstract.slice(0, 250)}...
                   </div>
                   
                   {/* Action Link */}
-                  <div className="text-sm">
+                  <div className="text-xs sm:text-sm">
                     <a 
                       href={paper.url} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-blue-400 underline hover:text-blue-300"
+                      className="inline-flex items-center gap-1 sm:gap-2 text-blue-400 underline hover:text-blue-300 break-all"
                     >
                       → view paper
                       <ExternalLink className="w-3 h-3" />
@@ -418,13 +421,13 @@ function ResultsPageContent() {
             </div>
           ))
         ) : (
-          <div className="p-6 text-center border border-yellow-500 bg-yellow-950/20">
-            <span className="text-yellow-400">⚠ No papers found yet. Research in progress...</span>
+          <div className="p-4 sm:p-6 text-center border border-yellow-500 bg-yellow-950/20">
+            <span className="text-xs sm:text-sm text-yellow-400">⚠ No papers found yet. Research in progress...</span>
           </div>
         )}
         
         {/* CLI Footer */}
-        <div className="pt-4 mt-6 text-sm text-center text-gray-500 border-t border-green-500">
+        <div className="pt-4 mt-6 text-xs sm:text-sm text-center text-gray-500 border-t border-green-500">
           <span className="text-green-500">$</span> autonomous-research-agent v1.0.0
         </div>
       </div>

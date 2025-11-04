@@ -72,10 +72,10 @@ export default function HomePage() {
     <div className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-green-400 font-mono transition-colors">
       {/* CLI Header */}
       <header className="border-b border-gray-300 dark:border-green-500 bg-white dark:bg-black transition-colors">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-2 sm:px-4 py-3 sm:py-4">
           <div className="space-y-2">
             {/* ASCII Banner */}
-            <pre className="text-blue-600 dark:text-green-500 text-xs leading-tight">
+            <pre className="hidden sm:block text-blue-600 dark:text-green-500 text-[8px] sm:text-xs leading-tight overflow-x-auto">
 {`╔═══════════════════════════════════════════════════════════════════╗
 ║  █████╗ ██╗   ██╗████████╗ ██████╗  ██████╗ ███████╗███╗   ██╗  ║
 ║ ██╔══██╗██║   ██║╚══██╔══╝██╔═══██╗██╔════╝ ██╔════╝████╗  ██║  ║
@@ -85,15 +85,20 @@ export default function HomePage() {
 ║ ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═══╝  ║
 ╚═══════════════════════════════════════════════════════════════════╝`}
             </pre>
-            <div className="flex items-center justify-between text-sm">
-              <div className="flex items-center gap-2">
+            {/* Mobile Title */}
+            <div className="sm:hidden text-center py-2">
+              <h1 className="text-lg font-bold text-blue-600 dark:text-green-500">AUTOGEN</h1>
+              <p className="text-xs text-orange-600 dark:text-yellow-400">Research Agent</p>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs sm:text-sm">
+              <div className="flex items-center gap-2 flex-wrap">
                 <span className="text-blue-600 dark:text-green-500">$</span>
                 <span className="text-blue-700 dark:text-cyan-400">research-agent</span>
                 <span className="text-gray-600 dark:text-gray-500">v1.0.0</span>
-                <span className="text-gray-400 dark:text-gray-600">|</span>
+                <span className="hidden sm:inline text-gray-400 dark:text-gray-600">|</span>
                 <span className="text-orange-600 dark:text-yellow-400">Multi-Agent AI Research Assistant</span>
               </div>
-              <div className="flex gap-4 items-center">
+              <div className="flex gap-2 sm:gap-4 items-center flex-wrap">
                 <ThemeToggle />
                 <button 
                   onClick={() => router.push('/history')}
@@ -120,17 +125,17 @@ export default function HomePage() {
       </header>
 
       {/* Main Content */}
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-2 sm:px-4 py-4 sm:py-8">
         {/* Command Prompt Hero */}
-        <div className="max-w-4xl mx-auto mb-8">
-          <div className="border border-green-500 bg-black p-6">
-            <div className="space-y-2 text-sm mb-4">
+        <div className="max-w-4xl mx-auto mb-4 sm:mb-8">
+          <div className="border border-green-500 bg-black p-3 sm:p-6">
+            <div className="space-y-2 text-xs sm:text-sm mb-4">
               <div className="flex items-center gap-2">
                 <span className="text-green-500">$</span>
                 <span className="text-cyan-400">system</span>
                 <span className="text-gray-500">status</span>
               </div>
-              <div className="pl-6 space-y-1">
+              <div className="pl-4 sm:pl-6 space-y-1">
                 <div className="flex items-center gap-2">
                   <span className="text-green-500">✓</span>
                   <span className="text-gray-400">Engine:</span>
@@ -143,12 +148,12 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-green-500">→</span>
-                  <span className="text-white">Multi-agent AI system for comprehensive literature review</span>
+                  <span className="text-white text-xs sm:text-sm">Multi-agent AI system for comprehensive literature review</span>
                 </div>
               </div>
             </div>
-            <div className="border-t border-green-900 pt-4">
-              <p className="text-center text-lg text-green-300">
+            <div className="border-t border-green-900 pt-3 sm:pt-4">
+              <p className="text-center text-sm sm:text-lg text-green-300">
                 → Accelerate Your Research with AI Agents
               </p>
             </div>
@@ -156,19 +161,19 @@ export default function HomePage() {
         </div>
 
         {/* Search Terminal */}
-        <div className="max-w-4xl mx-auto mb-8">
+        <div className="max-w-4xl mx-auto mb-4 sm:mb-8">
           <div className="border border-green-500 bg-black">
-            <div className="border-b border-green-500 px-4 py-2 bg-green-950/20">
-              <div className="flex items-center gap-2 text-sm">
+            <div className="border-b border-green-500 px-3 sm:px-4 py-2 bg-green-950/20">
+              <div className="flex items-center gap-2 text-xs sm:text-sm">
                 <span className="text-green-500">$</span>
                 <span className="text-cyan-400">research-agent</span>
                 <span className="text-gray-500">--mode</span>
                 <span className="text-yellow-400">search</span>
               </div>
             </div>
-            <div className="p-6 space-y-4">
+            <div className="p-3 sm:p-6 space-y-3 sm:space-y-4">
               <div>
-                <label className="text-sm text-cyan-400 mb-2 block">
+                <label className="text-xs sm:text-sm text-cyan-400 mb-2 block">
                   → QUERY:
                 </label>
                 <textarea
@@ -176,12 +181,12 @@ export default function HomePage() {
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   rows={4}
-                  className="w-full bg-black border border-green-500 text-green-400 font-mono text-sm p-3 focus:outline-none focus:border-green-300 resize-none placeholder:text-green-900"
+                  className="w-full bg-black border border-green-500 text-green-400 font-mono text-xs sm:text-sm p-2 sm:p-3 focus:outline-none focus:border-green-300 resize-none placeholder:text-green-900"
                 />
               </div>
 
               <div>
-                <label htmlFor="maxResults" className="text-sm text-cyan-400 mb-2 block">
+                <label htmlFor="maxResults" className="text-xs sm:text-sm text-cyan-400 mb-2 block">
                   → MAX_RESULTS:
                 </label>
                 <input
@@ -195,7 +200,7 @@ export default function HomePage() {
                       setMaxResults(value);
                     }
                   }}
-                  className="w-full bg-black border border-green-500 text-green-400 font-mono text-sm px-3 py-2 focus:outline-none focus:border-green-300"
+                  className="w-full bg-black border border-green-500 text-green-400 font-mono text-xs sm:text-sm px-2 sm:px-3 py-2 focus:outline-none focus:border-green-300"
                   placeholder="10"
                   aria-label="Number of papers to fetch"
                 />
@@ -205,10 +210,10 @@ export default function HomePage() {
               </div>
 
               {error && (
-                <div className="border border-red-500 bg-red-950/20 p-3">
+                <div className="border border-red-500 bg-red-950/20 p-2 sm:p-3">
                   <div className="flex items-start gap-2">
-                    <span className="text-red-500">ERROR:</span>
-                    <p className="text-sm text-red-400 font-mono whitespace-pre-wrap flex-1">{error}</p>
+                    <span className="text-red-500 text-xs sm:text-sm">ERROR:</span>
+                    <p className="text-xs sm:text-sm text-red-400 font-mono whitespace-pre-wrap flex-1">{error}</p>
                   </div>
                 </div>
               )}
@@ -216,11 +221,11 @@ export default function HomePage() {
               <button
                 onClick={handleSearch}
                 disabled={isLoading}
-                className="w-full border border-green-500 bg-green-950/30 text-green-400 py-3 hover:bg-green-900/30 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                className="w-full border border-green-500 bg-green-950/30 text-green-400 py-2 sm:py-3 text-sm sm:text-base hover:bg-green-900/30 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
                 {isLoading ? (
                   <span className="flex items-center justify-center gap-2">
-                    <span className="inline-block w-4 h-4 border-2 border-green-400 border-t-transparent rounded-full animate-spin" />
+                    <span className="inline-block w-3 h-3 sm:w-4 sm:h-4 border-2 border-green-400 border-t-transparent rounded-full animate-spin" />
                     [EXECUTING...]
                   </span>
                 ) : (
@@ -232,104 +237,104 @@ export default function HomePage() {
         </div>
 
         {/* Features Grid - CLI Style */}
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-4">
+        <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
           <div 
-            className="border border-green-500 bg-black hover:bg-green-950/20 transition-colors cursor-pointer p-4"
+            className="border border-green-500 bg-black hover:bg-green-950/20 transition-colors cursor-pointer p-3 sm:p-4"
             onClick={() => router.push('/')}
           >
-            <div className="flex items-center gap-2 mb-2 text-sm">
-              <Search className="w-4 h-4 text-green-500" />
+            <div className="flex items-center gap-2 mb-2 text-xs sm:text-sm">
+              <Search className="w-3 h-3 sm:w-4 sm:h-4 text-green-500" />
               <span className="text-cyan-400">multi_source_search</span>
             </div>
-            <p className="text-xs text-gray-400 mb-2 pl-6">
+            <p className="text-[10px] sm:text-xs text-gray-400 mb-2 pl-4 sm:pl-6">
               Search across arXiv, Semantic Scholar, and more. Intelligent deduplication ensures unique results.
             </p>
-            <div className="pl-6 text-xs">
+            <div className="pl-4 sm:pl-6 text-[10px] sm:text-xs">
               <span className="text-green-500">→ status:</span>
               <span className="text-green-300"> ACTIVE</span>
             </div>
           </div>
 
           <div 
-            className="border border-green-500 bg-black hover:bg-green-950/20 transition-colors cursor-pointer p-4"
+            className="border border-green-500 bg-black hover:bg-green-950/20 transition-colors cursor-pointer p-3 sm:p-4"
             onClick={() => router.push('/network')}
           >
-            <div className="flex items-center gap-2 mb-2 text-sm">
-              <Network className="w-4 h-4 text-purple-500" />
+            <div className="flex items-center gap-2 mb-2 text-xs sm:text-sm">
+              <Network className="w-3 h-3 sm:w-4 sm:h-4 text-purple-500" />
               <span className="text-cyan-400">citation_network</span>
             </div>
-            <p className="text-xs text-gray-400 mb-2 pl-6">
+            <p className="text-[10px] sm:text-xs text-gray-400 mb-2 pl-4 sm:pl-6">
               Visualize paper relationships and discover influential works through citation analysis.
             </p>
-            <div className="pl-6 text-xs">
+            <div className="pl-4 sm:pl-6 text-[10px] sm:text-xs">
               <span className="text-green-500">→</span>
               <span className="text-blue-400"> ./explore_network</span>
             </div>
           </div>
 
           <div 
-            className="border border-green-500 bg-black hover:bg-green-950/20 transition-colors cursor-pointer p-4"
+            className="border border-green-500 bg-black hover:bg-green-950/20 transition-colors cursor-pointer p-3 sm:p-4"
             onClick={() => router.push('/analytics')}
           >
-            <div className="flex items-center gap-2 mb-2 text-sm">
-              <BarChart3 className="w-4 h-4 text-green-500" />
+            <div className="flex items-center gap-2 mb-2 text-xs sm:text-sm">
+              <BarChart3 className="w-3 h-3 sm:w-4 sm:h-4 text-green-500" />
               <span className="text-cyan-400">analytics_dashboard</span>
             </div>
-            <p className="text-xs text-gray-400 mb-2 pl-6">
+            <p className="text-[10px] sm:text-xs text-gray-400 mb-2 pl-4 sm:pl-6">
               Track research activity, analyze trends, and view comprehensive statistics across all queries.
             </p>
-            <div className="pl-6 text-xs">
+            <div className="pl-4 sm:pl-6 text-[10px] sm:text-xs">
               <span className="text-green-500">→</span>
               <span className="text-blue-400"> ./view_analytics</span>
             </div>
           </div>
 
           <div 
-            className="border border-green-500 bg-black hover:bg-green-950/20 transition-colors cursor-pointer p-4"
+            className="border border-green-500 bg-black hover:bg-green-950/20 transition-colors cursor-pointer p-3 sm:p-4"
             onClick={() => router.push('/reports')}
           >
-            <div className="flex items-center gap-2 mb-2 text-sm">
-              <FileText className="w-4 h-4 text-orange-500" />
+            <div className="flex items-center gap-2 mb-2 text-xs sm:text-sm">
+              <FileText className="w-3 h-3 sm:w-4 sm:h-4 text-orange-500" />
               <span className="text-cyan-400">research_reports</span>
             </div>
-            <p className="text-xs text-gray-400 mb-2 pl-6">
+            <p className="text-[10px] sm:text-xs text-gray-400 mb-2 pl-4 sm:pl-6">
               Generate and export comprehensive research reports with citations and summaries.
             </p>
-            <div className="pl-6 text-xs">
+            <div className="pl-4 sm:pl-6 text-[10px] sm:text-xs">
               <span className="text-green-500">→</span>
               <span className="text-blue-400"> ./view_reports</span>
             </div>
           </div>
 
           <div 
-            className="border border-green-500 bg-black hover:bg-green-950/20 transition-colors cursor-pointer p-4"
+            className="border border-green-500 bg-black hover:bg-green-950/20 transition-colors cursor-pointer p-3 sm:p-4"
             onClick={() => router.push('/history')}
           >
-            <div className="flex items-center gap-2 mb-2 text-sm">
-              <History className="w-4 h-4 text-indigo-500" />
+            <div className="flex items-center gap-2 mb-2 text-xs sm:text-sm">
+              <History className="w-3 h-3 sm:w-4 sm:h-4 text-indigo-500" />
               <span className="text-cyan-400">search_history</span>
             </div>
-            <p className="text-xs text-gray-400 mb-2 pl-6">
+            <p className="text-[10px] sm:text-xs text-gray-400 mb-2 pl-4 sm:pl-6">
               Review past research queries, track progress, and revisit previous results.
             </p>
-            <div className="pl-6 text-xs">
+            <div className="pl-4 sm:pl-6 text-[10px] sm:text-xs">
               <span className="text-green-500">→</span>
               <span className="text-blue-400"> ./view_history</span>
             </div>
           </div>
 
           <div 
-            className="border border-green-500 bg-black hover:bg-green-950/20 transition-colors cursor-pointer p-4"
+            className="border border-green-500 bg-black hover:bg-green-950/20 transition-colors cursor-pointer p-3 sm:p-4"
             onClick={() => window.open('https://github.com/titanite07/autonomous-research-agent', '_blank')}
           >
-            <div className="flex items-center gap-2 mb-2 text-sm">
-              <Zap className="w-4 h-4 text-yellow-500" />
+            <div className="flex items-center gap-2 mb-2 text-xs sm:text-sm">
+              <Zap className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-500" />
               <span className="text-cyan-400">ai_agent_system</span>
             </div>
-            <p className="text-xs text-gray-400 mb-2 pl-6">
+            <p className="text-[10px] sm:text-xs text-gray-400 mb-2 pl-4 sm:pl-6">
               Multi-agent AI system powered by AutoGen for intelligent research synthesis.
             </p>
-            <div className="pl-6 text-xs">
+            <div className="pl-4 sm:pl-6 text-[10px] sm:text-xs">
               <span className="text-green-500">→</span>
               <span className="text-blue-400"> ./learn_more</span>
             </div>
@@ -338,8 +343,8 @@ export default function HomePage() {
       </main>
 
       {/* CLI Footer */}
-      <footer className="border-t border-green-500 mt-12 py-4">
-        <div className="container mx-auto px-4 text-center text-xs text-gray-500">
+      <footer className="border-t border-green-500 mt-8 sm:mt-12 py-3 sm:py-4">
+        <div className="container mx-auto px-2 sm:px-4 text-center text-[10px] sm:text-xs text-gray-500">
           <span className="text-green-500">$</span> Built with AutoGen, Groq, Next.js, FastAPI
         </div>
       </footer>

@@ -134,24 +134,24 @@ export function AIChatbot() {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed z-50 flex items-center gap-2 px-4 py-3 text-white transition-all duration-300 rounded-full shadow-lg bottom-6 right-6 bg-gradient-to-r from-indigo-600 to-purple-600 hover:shadow-xl hover:scale-105 group"
+          className="fixed z-50 flex items-center gap-2 px-3 py-2 text-white transition-all duration-300 rounded-full shadow-lg sm:px-4 sm:py-3 bottom-4 right-4 sm:bottom-6 sm:right-6 bg-gradient-to-r from-indigo-600 to-purple-600 hover:shadow-xl hover:scale-105 group"
           aria-label="Open AI Chat Assistant"
         >
-          <MessageCircle className="w-5 h-5" />
-          <span className="font-medium">AI Assistant</span>
-          <Sparkles className="w-4 h-4 animate-pulse" />
+          <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
+          <span className="text-sm font-medium sm:text-base">AI Assistant</span>
+          <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 animate-pulse" />
         </button>
       )}
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-6 right-6 z-50 w-96 h-[600px] bg-white dark:bg-gray-800 rounded-2xl shadow-2xl flex flex-col border border-gray-200 dark:border-gray-700 overflow-hidden">
+        <div className="fixed inset-x-4 bottom-4 sm:inset-x-auto sm:bottom-6 sm:right-6 z-50 sm:w-96 h-[calc(100vh-8rem)] sm:h-[600px] bg-white dark:bg-gray-800 rounded-2xl shadow-2xl flex flex-col border border-gray-200 dark:border-gray-700 overflow-hidden">
           {/* Header */}
-          <div className="flex items-center justify-between px-4 py-3 text-white bg-gradient-to-r from-indigo-600 to-purple-600">
+          <div className="flex items-center justify-between px-3 py-2 text-white sm:px-4 sm:py-3 bg-gradient-to-r from-indigo-600 to-purple-600">
             <div className="flex items-center gap-2">
-              <Sparkles className="w-5 h-5" />
+              <Sparkles className="w-4 h-4 sm:w-5 sm:h-5" />
               <div>
-                <h3 className="font-semibold">Research Assistant</h3>
+                <h3 className="text-sm font-semibold sm:text-base">Research Assistant</h3>
                 <p className="text-xs text-indigo-100">Powered by Groq AI</p>
               </div>
             </div>
@@ -160,12 +160,12 @@ export function AIChatbot() {
               className="p-1 transition-colors rounded-lg hover:bg-white/20"
               aria-label="Close chat"
             >
-              <X className="w-5 h-5" />
+              <X className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
           </div>
 
           {/* Messages */}
-          <div className="flex-1 p-4 space-y-4 overflow-y-auto bg-gray-50 dark:bg-gray-900">
+          <div className="flex-1 p-3 space-y-3 overflow-y-auto bg-gray-50 dark:bg-gray-900 sm:p-4 sm:space-y-4">
             {messages.map((message) => (
               <div
                 key={message.id}
@@ -174,15 +174,15 @@ export function AIChatbot() {
                 }`}
               >
                 <div
-                  className={`max-w-[80%] rounded-2xl px-4 py-2 ${
+                  className={`max-w-[85%] sm:max-w-[80%] rounded-2xl px-3 py-2 sm:px-4 ${
                     message.role === 'user'
                       ? 'bg-indigo-600 text-white'
                       : 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-gray-200 dark:border-gray-700'
                   }`}
                 >
-                  <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+                  <p className="text-xs whitespace-pre-wrap sm:text-sm">{message.content}</p>
                   <p
-                    className={`text-xs mt-1 ${
+                    className={`text-[10px] sm:text-xs mt-1 ${
                       message.role === 'user'
                         ? 'text-indigo-200'
                         : 'text-gray-500 dark:text-gray-400'
@@ -199,9 +199,9 @@ export function AIChatbot() {
 
             {isLoading && (
               <div className="flex justify-start">
-                <div className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-2xl">
-                  <Loader2 className="w-4 h-4 text-indigo-600 animate-spin" />
-                  <span className="text-sm text-gray-600 dark:text-gray-400">
+                <div className="flex items-center gap-2 px-3 py-2 bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-2xl sm:px-4">
+                  <Loader2 className="w-3 h-3 text-indigo-600 animate-spin sm:w-4 sm:h-4" />
+                  <span className="text-xs text-gray-600 dark:text-gray-400 sm:text-sm">
                     Thinking...
                   </span>
                 </div>
@@ -212,31 +212,31 @@ export function AIChatbot() {
           </div>
 
           {/* Input */}
-          <div className="p-4 bg-white border-t border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+          <div className="p-3 bg-white border-t border-gray-200 dark:bg-gray-800 dark:border-gray-700 sm:p-4">
             <div className="flex gap-2">
               <textarea
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyPress={handleKeyPress}
                 placeholder="Ask me anything about research..."
-                className="flex-1 px-3 py-2 border border-gray-300 rounded-lg resize-none dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white"
+                className="flex-1 px-2 py-1 text-sm border border-gray-300 rounded-lg resize-none dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white sm:px-3 sm:py-2 sm:text-base"
                 rows={2}
                 disabled={isLoading}
               />
               <button
                 onClick={handleSend}
                 disabled={!input.trim() || isLoading}
-                className="px-4 py-2 text-white transition-colors bg-indigo-600 rounded-lg hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-3 py-2 text-white transition-colors bg-indigo-600 rounded-lg hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed sm:px-4"
                 aria-label="Send message"
               >
                 {isLoading ? (
-                  <Loader2 className="w-5 h-5 animate-spin" />
+                  <Loader2 className="w-4 h-4 animate-spin sm:w-5 sm:h-5" />
                 ) : (
-                  <Send className="w-5 h-5" />
+                  <Send className="w-4 h-4 sm:w-5 sm:h-5" />
                 )}
               </button>
             </div>
-            <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
+            <p className="mt-2 text-[10px] sm:text-xs text-gray-500 dark:text-gray-400">
               Press Enter to send, Shift+Enter for new line • Type "quit" to close • Press ESC to exit
             </p>
           </div>
