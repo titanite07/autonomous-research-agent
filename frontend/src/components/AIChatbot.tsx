@@ -17,7 +17,7 @@ export function AIChatbot() {
     {
       id: '1',
       role: 'assistant',
-      content: "Hi! I'm your research assistant. I can help you with:\n\n• Crafting research queries\n• Understanding paper relevance\n• Refining your research topic\n• Suggesting related keywords\n• Interpreting search results\n\nHow can I assist you today?",
+      content: "Hi! 👋 I'm your research assistant. I can help you with:\n\n• Crafting research queries\n• Understanding paper relevance\n• Refining your research topic\n• Suggesting related keywords\n• Interpreting search results\n\nHow can I assist you today?\n\n💡 Tip: Type 'quit' or press ESC to close this chat anytime.",
       timestamp: new Date(),
     },
   ]);
@@ -33,8 +33,48 @@ export function AIChatbot() {
     scrollToBottom();
   }, [messages]);
 
+  // Handle ESC key to close chat
+  useEffect(() => {
+    const handleEscKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isOpen) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('keydown', handleEscKey);
+    return () => {
+      document.removeEventListener('keydown', handleEscKey);
+    };
+  }, [isOpen]);
+
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
   const handleSend = async () => {
     if (!input.trim() || isLoading) return;
+
+    const trimmedInput = input.trim();
+
+    // Handle quit command
+    if (trimmedInput.toLowerCase() === 'quit' || trimmedInput.toLowerCase() === 'exit' || trimmedInput.toLowerCase() === 'close') {
+      const goodbyeMessage: Message = {
+        id: Date.now().toString(),
+        role: 'assistant',
+        content: "Thank you for using the AI Research Assistant! Feel free to come back anytime you need help with your research. Good luck! 👋",
+        timestamp: new Date(),
+      };
+
+      setMessages((prev) => [...prev, goodbyeMessage]);
+      setInput('');
+      
+      // Close chat after 2 seconds
+      setTimeout(() => {
+        setIsOpen(false);
+      }, 2000);
+      
+      return;
+    }
 
     const userMessage: Message = {
       id: Date.now().toString(),
@@ -94,7 +134,7 @@ export function AIChatbot() {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 z-50 flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
+          className="fixed z-50 flex items-center gap-2 px-4 py-3 text-white transition-all duration-300 rounded-full shadow-lg bottom-6 right-6 bg-gradient-to-r from-indigo-600 to-purple-600 hover:shadow-xl hover:scale-105 group"
           aria-label="Open AI Chat Assistant"
         >
           <MessageCircle className="w-5 h-5" />
@@ -107,7 +147,7 @@ export function AIChatbot() {
       {isOpen && (
         <div className="fixed bottom-6 right-6 z-50 w-96 h-[600px] bg-white dark:bg-gray-800 rounded-2xl shadow-2xl flex flex-col border border-gray-200 dark:border-gray-700 overflow-hidden">
           {/* Header */}
-          <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-4 py-3 flex items-center justify-between">
+          <div className="flex items-center justify-between px-4 py-3 text-white bg-gradient-to-r from-indigo-600 to-purple-600">
             <div className="flex items-center gap-2">
               <Sparkles className="w-5 h-5" />
               <div>
@@ -117,7 +157,7 @@ export function AIChatbot() {
             </div>
             <button
               onClick={() => setIsOpen(false)}
-              className="p-1 hover:bg-white/20 rounded-lg transition-colors"
+              className="p-1 transition-colors rounded-lg hover:bg-white/20"
               aria-label="Close chat"
             >
               <X className="w-5 h-5" />
@@ -125,7 +165,7 @@ export function AIChatbot() {
           </div>
 
           {/* Messages */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50 dark:bg-gray-900">
+          <div className="flex-1 p-4 space-y-4 overflow-y-auto bg-gray-50 dark:bg-gray-900">
             {messages.map((message) => (
               <div
                 key={message.id}
@@ -159,8 +199,8 @@ export function AIChatbot() {
 
             {isLoading && (
               <div className="flex justify-start">
-                <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl px-4 py-2 flex items-center gap-2">
-                  <Loader2 className="w-4 h-4 animate-spin text-indigo-600" />
+                <div className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-2xl">
+                  <Loader2 className="w-4 h-4 text-indigo-600 animate-spin" />
                   <span className="text-sm text-gray-600 dark:text-gray-400">
                     Thinking...
                   </span>
@@ -172,21 +212,21 @@ export function AIChatbot() {
           </div>
 
           {/* Input */}
-          <div className="p-4 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+          <div className="p-4 bg-white border-t border-gray-200 dark:bg-gray-800 dark:border-gray-700">
             <div className="flex gap-2">
               <textarea
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyPress={handleKeyPress}
                 placeholder="Ask me anything about research..."
-                className="flex-1 px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white"
+                className="flex-1 px-3 py-2 border border-gray-300 rounded-lg resize-none dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white"
                 rows={2}
                 disabled={isLoading}
               />
               <button
                 onClick={handleSend}
                 disabled={!input.trim() || isLoading}
-                className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                className="px-4 py-2 text-white transition-colors bg-indigo-600 rounded-lg hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed"
                 aria-label="Send message"
               >
                 {isLoading ? (
@@ -196,8 +236,8 @@ export function AIChatbot() {
                 )}
               </button>
             </div>
-            <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
-              Press Enter to send, Shift+Enter for new line
+            <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
+              Press Enter to send, Shift+Enter for new line • Type "quit" to close • Press ESC to exit
             </p>
           </div>
         </div>
