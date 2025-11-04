@@ -1,0 +1,1499 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d18" for="edge" attr.name="similarity_score" attr.type="double"/>
+<key id="d17" for="edge" attr.name="created_at" attr.type="string"/>
+<key id="d16" for="edge" attr.name="edge_type" attr.type="string"/>
+<key id="d15" for="edge" attr.name="frequency" attr.type="long"/>
+<key id="d14" for="node" attr.name="dataset_id" attr.type="string"/>
+<key id="d13" for="node" attr.name="method_id" attr.type="string"/>
+<key id="d12" for="node" attr.name="category" attr.type="string"/>
+<key id="d11" for="node" attr.name="frequency" attr.type="long"/>
+<key id="d10" for="node" attr.name="concept_id" attr.type="string"/>
+<key id="d9" for="node" attr.name="name" attr.type="string"/>
+<key id="d8" for="node" attr.name="sections" attr.type="string"/>
+<key id="d7" for="node" attr.name="created_at" attr.type="string"/>
+<key id="d6" for="node" attr.name="node_type" attr.type="string"/>
+<key id="d5" for="node" attr.name="doi" attr.type="string"/>
+<key id="d4" for="node" attr.name="pdf_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="year" attr.type="string"/>
+<key id="d2" for="node" attr.name="abstract" attr.type="string"/>
+<key id="d1" for="node" attr.name="title" attr.type="string"/>
+<key id="d0" for="node" attr.name="paper_id" attr.type="string"/>
+<graph edgedefault="directed"><node id="paper_unknown_1515">
+  <data key="d0">paper_unknown_1515</data>
+  <data key="d1">Unknown</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">shang2024.pdf</data>
+  <data key="d5"></data>
+  <data key="d6">paper</data>
+  <data key="d7">2025-11-01T08:11:41.485280</data>
+  <data key="d8">{"introduction": "DDos attack is a distributed type of attack mode in which an attacker \ncontrols a large number of attack machines and sends out DoS attack \ninstructions to the machine. In the latest Internet security report, DDoS \nattacks remain one of the major cybersecurity threats. The inexpensive \npricing and \"pay-as-you-go\" focused accessibility to computational fea\u00ad\ntures and amenities on demand make cloud-based services a formidable \ncompetitor to the conventional IT solutions available in prior eras. The \nuse of cloud computing is gaining popularity rapidly. Whether entirely \nor largely governments and companies have moved their IT in\u00ad\nfrastructures onto the cloud. Cloud-based Infrastructure offers various \nadvantages compared to traditional, on-site conventional in\u00ad\nfrastructures. The removal of expenses associated with operation and \nimpairment, as well as the accessibility of materials on request, are only \na few of the advantages. However, there are many concerns that cloud \nconsumers have, and the research addresses these issues. The majority of \nthese inquiries centre on safeguarding operational concepts and infor\u00ad\nmation. Many security-related attacks can be prevented in conventional \nIT systems that do not use cloud computing. Focused cloud-based crimes \nare already using their innovations. Many security vulnerabilities in \ncloud computing are unique compared to their predecessors in non- \ncloud computing environments because data and business logic are \nstored on an external cloud server that lacks accessible oversight. The \ndenial-of-service (DoS) assault is one technique that has been in the \nspotlight recently. Denial-of-service incidents are directed at the server \nrather than the people it supports. DoS attackers attempt to flood live \nservers by masquerading genuine users to overload the service\u2019s ca\u00ad\npacity to handle incoming inquiries [1]. Cloud computing is an \nInternet-based service that enables users to access configurable \ncomputing resource sharing pools (including server, storage, application \nsoftware, services, networks, etc.) to achieve online access to computing \nresources on demand. As a mixture of emerging technologies and busi\u00ad\nness models, cloud computing has developed rapidly in recent years due \nto its advantages of super-large scale, virtualization, high reliability, \ngood scalability and on-demand services. To overcome this issue, mul\u00ad\ntiple inquiries are sent to the server simultaneously. The term \"distrib\u00ad\nuted denial of service,\" or DDoS, refers to a variation on the classic \nE-mail address: YongqiangShang2@163.com.  \nContents lists available at ScienceDirect \nMeasurement: Sensors \njournal homepage: www.sciencedirect.com/journal/measurement-sensors \nhttps://doi.org/10.1016/j.measen.2023.100991 \nReceived 25 July 2023; Received in revised form 13 November 2023; Accepted 18 December 2023   \n\n\n--- PAGE 2 ---\n\nMeasurement: Sensors 31 (2024) 100991\n2\n\"denial of service\" that uses numerous computers to attack and impair \none service at a time simultaneously. Among the most important and \npossibly catastrophic risks, among many others, is the growing number \nof distributed denial of service attacks observed. A quarter or more of the \nworld\u2019s organizations have experienced a distributed denial of service \nattack. The authors show great foresight in predicting DDoS attacks and \nwill increasingly focus on cloud-based assets and amenities. Multiple \nassaults in the past two years corroborate the paper\u2019s predictions about \nfuture attacks. There have been many attacks recently, but only a few \nhave gained widespread notoriety and interest from scientists. In 2015, \nLizard Squad hacked Microsoft and Sony\u2019s cloud-based gaming systems, \ncausing both firms to shut down their services on Christmas Day. \nDistributed denial of service attacks hit Rackspace, a cloud computing \nservices provider, hard. Another massive distributed denial of service \nattack was launched against Amazon EC2 cloud servers, serving as a \nmagnificent example of an attack. Company activities were severely \ndisrupted, money was lost, and there were immediate and long-term \neffects on the attacked businesses. In recent years, DDoS attacks have \nbecome more frequent, and the botnet used by attackers has become \nlarger, and the network traffic usage has reached a height of 1000G. For \ncloud computing platforms, DDoS attacks from outside are similar to \nDDoS attacks from traditional networks. According to the basic principle \nand characteristics of DDoS attack, the defense is mainly divided into \nfour stages: detection (Detecting), analysis (Analyz-ing), defense \n(Resisting) and counterattack (Counterattack). The detection and anal\u00ad\nysis technology is the key to the successful defense against DDoS attacks. \nAccording to research published by Verisign iDefense Security In\u00ad\ntelligence Solutions, distributed denial of service (DDoS) assaults have \nbeen particularly damaging to the internet and SaaS (Software as a \nService) business throughout the past few quarters. More than 75 % of \nknown countermeasures against DDoS assaults utilized services pro\u00ad\nvided by the cloud [2]. \"financial damages\" refers to one of the worst \npossible results of a Distributed Denial of Service attack in the cloud. The \nmedian price of a distributed denial of service assault is put at $482,000, \naccording to some estimates. Some of the financial losses suffered in Q1 \n2015 have been detailed in new disclosures from Neustar. Studies show \nthat, on average, more than $72K is stolen in a single hour. Distributed \ndenial of service (DDoS) attacks take on new significance in cloud \ncomputing. This variation directly results from the operational diffi\u00ad\nculties introduced by an assault on the victim network [3]. In the \nenvironment of cloud computing, DoS attack technology is also under\u00ad\ngoing new changes, and is manifested in a variety of forms. The attack \nmay come from outside the server cluster or from inside the server \ncluster. At present, the more popular attack method is for the attacker to \nattack a specific cloud computing platform or server cluster. This attack \nmethod causes great harm and various methods, and it is difficult to \nquickly carry out fault positioning and troubleshooting. \nClouds that provide Infrastructure as a Service (IaaS) to their clients \ncontain virtual machines (VMs) that host the amenities for the clients. \nThe flexibility and on-demand nature of the cloud is made possible by \nthe abstraction of servers. It allows virtual machines to acquire and \ndistribute capabilities on the fly as needed. The advantages of cloud \ncomputing, such as upon-request processing and easily accessible assets, \nhave contributed significantly to its recent meteoric rise. As a result, the \ncloud can now support a more significant number of virtual machines \n(VMs) with a far greater capacity to meet their resource requirements. \nThis is because a cloud-based virtual machine can access infinite re\u00ad\nsources. A Distributed Denial of Service (DDoS) assault, also known as \nan Economic Denial of Sustainability (EDoS) attack or a Fraudulent \nResource Consumption (FRC) attack, is the result of this \"adaptability\" or \n\"auto-scaling,\" which results in financial losses. Data center-distributed \ndenial of service attacks is the focus of this study. We also define these \nassaults, compared to more conventional DDoS attacks, and analyze and \nclassify the numerous developments in this field. We will provide a \ncomprehensive taxonomy of these functions to make this analysis more", "methodology": "that the naive Bayes method provides the most trustworthy conclusions. \nPCA selected 21 features from the possible 42 features, while LVQ \nselected only 20 features. The results suggest that LVQ based feature \nselection in the DT model may be more accurate than other methods in \nidentifying attacks. As mentioned earlier, the model also outperformed \nthe previous models in terms of accuracy, recall, specificity, and f-score. \nIt was shown that the naive Bayes model had significantly better pre\u00ad\ndictive power than the random forest model. There is a chance that a \nfalse positive rate warning will be triggered for packet transmissions \nwithin a network. Moreover, when compared to the random forest, \nnaive Bayes produces considerably more accurate forecasts. It was \ndemonstrated that the Naive Bayes algorithm outperformed the random \nforest technique to identify the false and actual rate of transmissions. \nThe result detection is not carried out in real time. Although attacks can \nbe detected, real-time alarm cannot be realized in the environment of \nhigh cluster security, so the feasibility of real-time monitoring under \nHadoop platform should be studied continuously. \nDeclaration of competing interest \nThe authors declare that they have no known competing financial \ninterests or personal relationships that could have appeared to influence \nthe work reported in this paper. \nY. Shang                                                                                                                                                                                                                                          \n\n\n--- PAGE 8 ---\n\nMeasurement: Sensors 31 (2024) 100991\n8\nData availability \nNo data was used for the research described in the article. \nAcknowledgement \nThe study was supported by Key R&amp;D and Promotion Special Project \n(Science \nand \nTechnology \nResearch) \nin \nHenan \nProvince \n(232102210146)\"", "related_work": "DDoS attacks, which target computer systems, are becoming \nincreasingly common. DDoS perpetrators have expanded their reach \ninto practically every area of technology, especially the cloud, the IoT, \nand the edge. Distributed denial of service (DDoS) attacks flood the \ntargeted machine or host with so much traffic that it crashes or exhausts \nall available resources (including the network). Multiple strategies for \ndefense have been proposed, but they have yet to be successful due to \nattackers\u2019 ability to educate themselves to employ recently discovered \ncomputerized ways of attack. Because of this, we presented a machine- \nlearning-based approach to spotting distributed denial-of-service \n(DDoS) attacks in the cloud. K Nearest Neighbour, Random Forest, \nand Naive Bayes are three different categorization machine learning \ntechniques that help the system detect a distributed denial of service \nattack with a 99.75% success rate. In our study, we offer a machine \nlearning-based approach to identifying and blocking DDoS attacks \nagainst servers situated in the cloud. Data mining for relevant statistics \nY. Shang                                                                                                                                                                                                                                          \n\n\n--- PAGE 4 ---\n\nMeasurement: Sensors 31 (2024) 100991\n4\nlargely determined our recommended technique\u2019s efficacy. Table 1 \nillustrate the results, from which it can be deduced that the suggested \nmethod has an excellent success rate (about 99.78 %) in identifying \nDDoS attacks while producing few errors. Since we focused primarily on \nthe supervised learning method in this study, future studies may \ninvestigate uncontrolled or reinforcement learning methods [9]. \nDistributed denial of service (DDoS) attacks are more challenging to \nexecute on the public internet than on a conventional network. There is \nmore than one threat to the cloud, and its surroundings are under attack \nfrom several directions. Existing machine learning techniques, such as \nneural classifiers, can be used to identify DDoS attacks. This research \naims to shed light on the results of an investigation into distributed \ndenial of service (DDoS) attacks in cloud settings. The number of false \npositives rises when artificial intelligence methods are applied for \ndetection. The ANN, SVM, kNN, J48, Feature rank and Feature selection \nalgorithms frequently detect Distributed Denial of Service (DDoS) at\u00ad\ntacks in a cloud context [10]. \nThe goal of this research was to examine several works associated \nwith the identification of network assaults in both traditional and cloud- \nbased infrastructures. In the following paper, we will examine the wide \nvariety of attacks that could occur in a cloud environment. There is \nsometimes a conflation between the terms \"bandwidth reduction\" and \n\"resource reduction\" when describing the impacts of distributed denial \nof service (DDoS) attacks. Most distributed denial of service (DDoS) \nassaults in the cloud are SYN Flood or Flash Crowd assaults. The analysis \nfound that TCP denial of service low-rate assaults and performance de\u00ad\ncreases are two of the most prevalent attack categories [11]. \nTo spot distributed denial of service (DDoS) attacks, researchers are \ntrying out various machine-learning algorithms, some of which have \nshown greater precision than others. In experiments, real-time network \nlogs, KDD, NSL-KDD, and CIDDS datasets were used to identify network \nattacks. Also used to predict DDoS attacks, linear regression, and logistic \nregression algorithms have been found to have high false favourable \nrates when implemented in several databases. To improve precision and \nrecognition rates, however, it is constantly necessary to increase the \nnumber of records used for training and testing the dataset, which is a \ndifficult task in and of itself. DDoS assaults cover a wide array of topics. \nTherefore, researchers can use many machine-learning techniques and \nclassifiers in future studies. Furthermore, regression analysis has \nreceived more usage in recently released literature [12]. As a potential \nresearch strategy, we can reduce dimensionality and then use the \nremaining data for regression evaluation. \nThe number of people using online resources has increased recently \ndue to the COVID-19 outbreak. As a direct consequence, there has been \nan increase in the number of end users subscribing to various cloud- \nbased applications, which provide various services to the end user. \nDDoS assaults, on the other hand, are aimed at interrupting cloud \ncomputing services\u2019 availability and processing power. This has the ef\u00ad\nfect of negatively impacting both the performance and accessibility of \ncloud computing resources. There is currently no reliable method for \ndetecting or filtering DDoS attacks, so they are a reliable tool for anyone \nlooking to launch cyberattacks. Recently, scientists have started exper\u00ad\nimenting with machine learning (ML) techniques to develop effective \nML-based tactics to detect distributed denial of service (DDoS) attacks \nFig. 2. Cloud DDoS classification, prevention, and mitigation.  \nFig. 3. Several tiers of cloud-based DDoS defence.  \nTable 1 \nDataset snapshot.  \nNo. \nTime \nPreliminary Place \nTarget \nProtocol \nLength \nInformation \n1 \n113.6020 \n11.0.2.20 \n194.172.8.2 \nDNS \n77 \nStandard query 0x0aa0 A \n2 \n113.6037 \n11.0.2.20 \n11.0.2.20 \nDNS \n174 \nStandard query response 0x375e AAAA \n3 \n113.6039 \n91.32.134.1 \n11.0.2.20 \nTCP \n66 \n82 &gt; 59,501 (ACK)Seq = 310 Ack = 18 Win = 66,646 Len = 0 \n4 \n113.6039 \n91.32.134.1 \n11.0.2.20 \nTCP \n66 \n82 &gt; 59,523 (ACK)Seq = 310 Ack = 18 Win = 66,646 Len = 0 \n5 \n113.6039 \n91.32.134.1 \n11.0.2.20 \nTCP \n66 \n82 &gt; 59,547 (ACK)Seq = 310 Ack = 18 Win = 66,646 Len = 0  \nY. Shang                                                                                                                                                                                                                                          \n\n\n--- PAGE 5 ---\n\nMeasurement: Sensors 31 (2024) 100991\n5\n[13]. In this scenario, we offer a method for detecting distributed denial \nof service (DDoS) assaults in a cloud computing environment by \ncombining big data with deep learning methods. The proposed method \nemploys big data sparking innovation to examine many incoming \npackets and a deep learning machine learning algorithm to filter \nfraudulent transmissions. Both of these technologies are used to make \nthe methodology more effective. The testing and training phases were \ndone with the KDDCUP99 dataset, and the final result attained a pre\u00ad\ncision of 99.82 %. Even if the number of people using smart devices \nproliferates, the computing power and resources available in these de\u00ad\nvices still need improvement. \nThe cloud-based system offers multiple solutions for overcoming the \nissue of scarce resources by allowing for their cooperative use. The cloud \ncomputing platform is periodically targeted by attackers while being \nsusceptible to a wide range of cyber threats. As such, we provide access \nto a DDoS warning system that is capable to detect the DDoS attack in a \ntimely and accurate fashion. To avoid malicious or undesirable com\u00ad\nmunications from reaching a cloud computing environment, we offer an", "discussion": "Assur. Cloud Comput. (2018) 49\u201380. \n[9] H.S. Mondal, M.T. Hasan, M.B. Hossain, M.E. Rahaman, R. Hasan, Enhancing \nsecure cloud computing environment by Detecting DDoS attack using fuzzy logic, \nin: 3rd Int. Conf. Electr. Inf. Commun. Technol. EICT 2017, 2018-Janua, 2018, \npp. 1\u20134. December. \n[10] P. Mishra, E.S. Pilli, V. Varadharajan, U. Tupakula, Intrusion detection techniques \nin cloud environment: a survey, J. Netw. Comput. Appl. 77 (October 2016) (2017) \n18\u201347. \n[11] R. Biswas, J. Wu, Filter assignment policy against distributed denial-of-service \nattack, Proc. Int. Conf. Parallel Distrib. Syst. - ICPADS 2018\u2013 Decem (2019) \n537\u2013544. \n[12] S. Abbas, T. Alyas, A. Athar, M.A. Khan, A. Fatima, W.A. Khan, EAI Endorsed \nTransactions Cloud Services Ranking by Measuring Multiple Parameters Using \nAFIS, 2014, pp. 1\u20137. \n[13] K. Iqbal, M. Adnan, S. Abbas, Z. Hasan, A. Fatima, Intelligent transportation system \n(ITS) for smart-cities using mamdani fuzzy inference system, Int. J. Adv. Comput. \nSci. Appl. 9 (2) (2018) 94\u2013105. \n[14] R.L. Neupane, T. Neely, P. Calyam, N. Chettri, M. Vassell, R. Durairajan, Intelligent \ndefense using pretense against targeted attacks in cloud platforms, Future Generat. \nComput. Syst. 93 (2019) 609\u2013626. \n[15] T. Alyas, M.S. Khan, Intelligent reliability management in software based cloud \necosystem using AGI 17 (12) (2017) 134\u2013139. \nFig. 5. Categorization outcome using MATLAB module.  \nY. Shang                                                                                                                                                                                                                                          \n\n\n--- PAGE 9 ---\n\nMeasurement: Sensors 31 (2024) 100991\n9\n[16] N.S. Naz, S. Abbas, M. Adnan, B. Abid, N. Tariq, M. Farrukh, Efficient load \nbalancing in cloud computing using multi-layered mamdani fuzzy inference expert \nsystem, Int. J. Adv. Comput. Sci. Appl. 10 (3) (2019) 569\u2013577. \n[17] Rudol, Implementasi keamanan jaringan komputer pada virtual private network \n(vpn) menggungakan, Implementasi Keamanan Jar. Komput. Pada Virtual Priv. \nNetw. Menggungakan Ipsec 2 (1) (2017) 65\u201368. \n[18] W. Alosaimi, M. Alshamrani, K. Al-Begain, Simulation-based study of distributed \ndenial of service attacks prevention in the cloud, Proc. - NGMAST 2015 9th Int. \nConf. Next Gener. Mob. Appl. Serv. Technol. (2016) 60\u201365. \n[19] N.C.S.N. Iyengar, G. Ganapathy, Chaotic theory based defensive mechanism \nagainst distributed Denial of Service Attack in cloud computing environment, Int. \nJ. Secur. its Appl. 9 (9) (2015) 197\u2013212. \n[20] S.A. Miller, O. Behalf, C. America, CASE STUDY HYPERCONVERGENCE VS \nCLOUD, 2017, pp. 134\u2013139. \n[21] T. Alyas, M.S. Khan, Intelligent reliability management in software based cloud \necosystem using AGI 17 (12) (2017) 134\u2013139. \n[22] R.E. Spiridonov, V.D. Cvetkov, O.M. Yurchik, Data Mining for Social Networks \nOpen Data Analysis, 2017, pp. 395\u2013396. \n[23] L. Wang, Y. Ma, J. Yan, V. Chang, A.Y. Zomaya, pipsCloud: high performance cloud \ncomputing for remote sensing big data management and processing, Future \nGenerat. Comput. Syst. 78 (2018) 353\u2013368. \nY. Shang", "numbered_section": "Gathering relevant data should be the initial step. By collecting \nrelevant data, we can locate and exploit several security holes in the \nvictim\u2019s computers in our attack. All available information regarding \nrunning services, open and closed ports, and other security holes is \ncompiled during the information-gathering phase. Here, the attacker has \na better chance of learning the weak spots of the victim, making further \nattacks much simpler. The cloud service provider assigns a different port \nnumber to each of its services, such as: In most cases, FTP uses port 990, \nbut it can use port 21 as well; HTTP uses port 80. TCP and UDP use ports \n20 through 23 for various purposes. \nIn conclusion, gathering information is a procedure that provides an \nattacker with all the necessary data to launch a successful attack on any \ntarget system. In order to learn more about a network, we can employ \nthe Nmap scanner. It simply needs the target machine\u2019s IP address to \nlaunch an attack; at this point, it will perform a full system scan, \nrevealing the targeted system\u2019s activity, services, open ports, and so on. \nThis implies that when the exposed connection is found, whatever \noccurring right now may be shown, regardless of what OS the other \nsystem is using. We would probably come up with an attack plan, and \nthat plan would involve a Distributed denial of service attack, which \nwould involve methods like the \"ping of death.\" A distributed denial of \nservice (DDOS) assault is one of the most damaging types of cyberattacks \nsince it disrupts the entire system. Due to the flood of packets caused by \nthe DDoS assault, all services are either momentarily or completely \ninaccessible. ParrotSec, like Kali and Ubuntu, can be managed via \ncommand line interface, with the shell or terminal serving as the pri\u00ad\nmary interface for entering these instructions. This feature is shared with \nParrotSec. Since ParrotSec handles everything, you can type \"PING IP\" \ninto the console, and it will be carried out. Since the victim site would \nreceive over 65 thousand packets, all services would be taken down. \nThis is how an assault could be generated. The subsequent stage is \ndetection. In this case, the target is a website hosted in the cloud, and \nNmap is used to scan the entire site in order to locate any security flaws. \nThis would lead to the exposure of any underlying problems. After the \nexposed ports have been made public, a Python script comprising a \ndistributed denial of service attack will be created and run. This implies \nthat when the exposed connection is found, whatever occurring right \nnow may be shown, regardless of what OS the other system is using. We \nwould probably come up with an attack plan, and that plan would \ninvolve a Distributed denial of service attack, which would involve", "results": "training and testing sets is an essential first step when developing a \nmachine learning-based model. However, a model driven by machine \nlearning is necessary to generate further forecasts against the newly \nacquired dataset. \n5.3. Prediction algorithm \nFollowing the development and validation of the information set, \nvarious algorithms have been developed through this process to antici\u00ad\npate several of the issues. In this particular scenario, one must consider \nidentifying whether DDoS messages are harmful or not. \nFig. 4. Procedure for navie bayes.  \nY. Shang                                                                                                                                                                                                                                          \n\n\n--- PAGE 7 ---\n\nMeasurement: Sensors 31 (2024) 100991\n7\n5.4. Prediction of naive bayes \nThe percentages of real positives and fake positives are displayed in \nthis figure. \nThe percentage of fake positives is seen as an indicator of a distrib\u00ad\nuted denial of service attack (DDoS) or of fake data packets. In contrast, \nthe proportion of actual positives is the standard one. In this case, the \naverage mean of actual packets is 0.973, while the overall mean for \nfraudulent transmissions is approximately 0.05. \n5.5. Proposed formula for naive bayes \nP(x|y) = P(y|x) P(x) / P(y)\nWhere, The conditional probability of y given x is denoted by P (y|x), \nThe likelihood of a class being P(x) and the conditional likelihood of a \npredictor is P(y), Probability of occurrence is P (x|y). \n5.6. Basic theory \n5.6.1. Three-way handshake \nThe between-machine communication paradigm is depicted in Fig. 2, \nand it must be adhered to for the communication to succeed. A three- \nway handshake is the name given to this particular protocol. Within \nthe context of this dialogue, a protocol exchange takes place between the \nserver and the hacker. When establishing a standard TCP relationship, \nthe attacker contacts the client by sending an SYN protocol. This is \nreferred to as the \"three-way handshake.\" A buffer will be allotted to the \nuser by the server as a reaction, and the server will also send back an \nACK packet in addition to the SYN packet. At this stage, the connection is \nin a state that is referred to be \"partially accessible,\" and it is waiting for \nan ACK response from the adversary in order to complete the link \nconfiguration. The process that occurs once it has been determined that \na relationship has been successfully established is called the three-way \nhandshake. \nOn the other hand, instances known as TCP SYN Flood are intended \nto exploit this three-way handshake by saturating the server with an \nexcessive number of SYN queries. The denial of functionality attack, of \nwhich TCP SYN Flood is a prominent example, falls within the DoS \ncategory. Employing a prolonged link and monitoring a duplicate of the \nserver\u2019s activity is required for a packet capture program to identify a \nTCP SYN Flood as having occurred. One way to accomplish this is to \nkeep an eye on a copy of the server\u2019s traffic. Introducing an incoming IP \nAddress to the server typically corresponds with the manifestation of \nTCP SYN Flood properties. After being submitted to calculation within a \npredetermined period, IP Addresses that continually show on the server \nare utilized to get characteristics in a DDoS attack. \n5.6.2. Naive Bayes algorithm \nA simple computational approach that can be used to calculate \nconditional likelihoods is the Naive Bayes Theorem. A probabilistic \ncondition quantifies the likelihood of one event based on the presump\u00ad\ntion, premise, declaration, or reality that a second event has already \noccurred. An analogy would be the chance of something happening after \nsomething else has happened. The posterior likelihood can be computed \nusing a formula like the one below based on the Naive Bayes theorem. \nP(A|B) = P(B|A)P(A)\nP(B)\nIf A is more likely if B happens to be accurate, then P (A|B) represents \nthe conditional likelihood of B if A is true. In probability theory, P(A) \nstands for the likelihood of occurrence A, and P(B) stands for the like\u00ad\nlihood of occurrence B. We discussed using the packet-capturing soft\u00ad\nware as a computational input to estimate the IP address and packet \nlength obtained. We did the maths using the Naive Bayes method and \nthe Gaussian distribution. After the computation, the outcomes are \ndisplayed on a two-dimensional network. The Gaussian Naive Bayes", "conclusion": "The key goals of this study are to learn how to recognize and prevent \nattacks involving distributed denial-of-service. The first and most crucial \nstep is determining which ports can be exploited. Nevertheless, this", "references": "[1] X. Jing, Z. Yan, W. Pedrycz, Security data collection and data analytics in the \ninternet: a survey, IEEE Commun. Surv. Tutorials 21 (1) (2019) 586\u2013618. \n[2] K.J. Singh, K. Thongam, T. De, Detection and differentiation of application layer \nDDoS attack from flash events using fuzzy-GA computation, IET Inf. Secur. 12 (6) \n(2018) 502\u2013512. \n[3] T. Subbulakshmi, S. Mercy Shalinie, C. Suneel Reddy, A. Ramamoorthi, Detection \nand classification of DDoS attacks using fuzzy inference system, Commun. Comput. \nInf. Sci. 89 CCIS (2010) 242\u2013252. \n[4] N. Tabassum, M. S. Khan, S. Abbas, T. Alyas, A. Athar, and M. A. Khan, \u201cEAI \nEndorsed Transactions Intelligent reliability management in hyper- convergence \ncloud infrastructure using fuzzy inference system,\u201dvol. 4, no. 5, pp. 1\u201312. \n[5] A.K. Soliman, C. Salama, H.K. Mohamed, Detecting DNS reflection amplification \nDDoS attack originating from the cloud, in: Proc. - 2018 13th Int. Conf. Comput. \nEng. Syst. ICCES 2018, 2019, pp. 145\u2013150. \n[6] P. Arun Raj Kumar, S. Selvakumar, Detection of distributed denial of service \nattacks using an ensemble of adaptive and hybrid neuro-fuzzy systems, Comput. \nCommun. 36 (3) (2013) 303\u2013319. \n[7] A.S. Boroujerdi, S. Ayat, A robust ensemble of neuro-fuzzy classifiers for DDoS \nattack detection, in: Proc. 2013 3rd Int. Conf. Comput. Sci. Netw. Technol. ICCSNT \n2013, 2014, pp. 484\u2013487. \n[8] L. Kwiat, C.A. Kamhoua, K.A. Kwiat, J. Tang, Risks and benefits: game-theoretical"}</data>
+</node>
+<node id="concept_denial_of">
+  <data key="d9">denial of</data>
+  <data key="d10">concept_denial_of</data>
+  <data key="d11">38</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.519813</data>
+</node>
+<node id="concept_of_service">
+  <data key="d9">of service</data>
+  <data key="d10">concept_of_service</data>
+  <data key="d11">36</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.519920</data>
+</node>
+<node id="concept_denial_of_service">
+  <data key="d9">denial of service</data>
+  <data key="d10">concept_denial_of_service</data>
+  <data key="d11">36</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.519961</data>
+</node>
+<node id="concept_distributed_denial">
+  <data key="d9">distributed denial</data>
+  <data key="d10">concept_distributed_denial</data>
+  <data key="d11">30</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.519983</data>
+</node>
+<node id="concept_distributed_denial_of">
+  <data key="d9">distributed denial of</data>
+  <data key="d10">concept_distributed_denial_of</data>
+  <data key="d11">30</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.520001</data>
+</node>
+<node id="concept_ddos_attacks">
+  <data key="d9">ddos attacks</data>
+  <data key="d10">concept_ddos_attacks</data>
+  <data key="d11">22</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.520031</data>
+</node>
+<node id="concept_cloud_computing">
+  <data key="d9">cloud computing</data>
+  <data key="d10">concept_cloud_computing</data>
+  <data key="d11">21</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.520048</data>
+</node>
+<node id="concept_in_the">
+  <data key="d9">in the</data>
+  <data key="d10">concept_in_the</data>
+  <data key="d11">17</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.520064</data>
+</node>
+<node id="concept_the_cloud">
+  <data key="d9">the cloud</data>
+  <data key="d10">concept_the_cloud</data>
+  <data key="d11">16</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.520081</data>
+</node>
+<node id="concept_to_the">
+  <data key="d9">to the</data>
+  <data key="d10">concept_to_the</data>
+  <data key="d11">15</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.520096</data>
+</node>
+<node id="concept_service_ddos">
+  <data key="d9">service ddos</data>
+  <data key="d10">concept_service_ddos</data>
+  <data key="d11">14</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.520114</data>
+</node>
+<node id="concept_of_service_ddos">
+  <data key="d9">of service ddos</data>
+  <data key="d10">concept_of_service_ddos</data>
+  <data key="d11">14</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.520130</data>
+</node>
+<node id="concept_of_the">
+  <data key="d9">of the</data>
+  <data key="d10">concept_of_the</data>
+  <data key="d11">13</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.520145</data>
+</node>
+<node id="concept_the_server">
+  <data key="d9">the server</data>
+  <data key="d10">concept_the_server</data>
+  <data key="d11">12</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.520161</data>
+</node>
+<node id="concept_on_the">
+  <data key="d9">on the</data>
+  <data key="d10">concept_on_the</data>
+  <data key="d11">12</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.520176</data>
+</node>
+<node id="concept_naive_bayes">
+  <data key="d9">naive bayes</data>
+  <data key="d10">concept_naive_bayes</data>
+  <data key="d11">12</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.520193</data>
+</node>
+<node id="concept_a_distributed">
+  <data key="d9">a distributed</data>
+  <data key="d10">concept_a_distributed</data>
+  <data key="d11">10</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.520216</data>
+</node>
+<node id="concept_cloud_based">
+  <data key="d9">cloud based</data>
+  <data key="d10">concept_cloud_based</data>
+  <data key="d11">10</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.520232</data>
+</node>
+<node id="concept_service_attack">
+  <data key="d9">service attack</data>
+  <data key="d10">concept_service_attack</data>
+  <data key="d11">10</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.520247</data>
+</node>
+<node id="concept_machine_learning">
+  <data key="d9">machine learning</data>
+  <data key="d10">concept_machine_learning</data>
+  <data key="d11">10</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.520261</data>
+</node>
+<node id="method_machine_learning">
+  <data key="d9">machine learning</data>
+  <data key="d13">method_machine_learning</data>
+  <data key="d11">5</data>
+  <data key="d12">machine_learning</data>
+  <data key="d6">method</data>
+  <data key="d7">2025-11-01T08:11:41.520276</data>
+</node>
+<node id="method_random_forest">
+  <data key="d9">random forest</data>
+  <data key="d13">method_random_forest</data>
+  <data key="d11">3</data>
+  <data key="d12">machine_learning</data>
+  <data key="d6">method</data>
+  <data key="d7">2025-11-01T08:11:41.520299</data>
+</node>
+<node id="method_classification">
+  <data key="d9">classification</data>
+  <data key="d13">method_classification</data>
+  <data key="d11">2</data>
+  <data key="d12">machine_learning</data>
+  <data key="d6">method</data>
+  <data key="d7">2025-11-01T08:11:41.520318</data>
+</node>
+<node id="method_svm">
+  <data key="d9">svm</data>
+  <data key="d13">method_svm</data>
+  <data key="d11">1</data>
+  <data key="d12">machine_learning</data>
+  <data key="d6">method</data>
+  <data key="d7">2025-11-01T08:11:41.520335</data>
+</node>
+<node id="method_regression">
+  <data key="d9">regression</data>
+  <data key="d13">method_regression</data>
+  <data key="d11">4</data>
+  <data key="d12">machine_learning</data>
+  <data key="d6">method</data>
+  <data key="d7">2025-11-01T08:11:41.520353</data>
+</node>
+<node id="method_naive_bayes">
+  <data key="d9">naive bayes</data>
+  <data key="d13">method_naive_bayes</data>
+  <data key="d11">12</data>
+  <data key="d12">machine_learning</data>
+  <data key="d6">method</data>
+  <data key="d7">2025-11-01T08:11:41.520369</data>
+</node>
+<node id="method_reinforcement_learning">
+  <data key="d9">reinforcement learning</data>
+  <data key="d13">method_reinforcement_learning</data>
+  <data key="d11">1</data>
+  <data key="d12">machine_learning</data>
+  <data key="d6">method</data>
+  <data key="d7">2025-11-01T08:11:41.520387</data>
+</node>
+<node id="method_deep_learning">
+  <data key="d9">deep learning</data>
+  <data key="d13">method_deep_learning</data>
+  <data key="d11">1</data>
+  <data key="d12">machine_learning</data>
+  <data key="d6">method</data>
+  <data key="d7">2025-11-01T08:11:41.525089</data>
+</node>
+<node id="method_bayes_method">
+  <data key="d9">bayes method</data>
+  <data key="d13">method_bayes_method</data>
+  <data key="d12">algorithm</data>
+  <data key="d6">method</data>
+  <data key="d7">2025-11-01T08:11:41.520417</data>
+</node>
+<node id="method_naive_bayes_algorithm">
+  <data key="d9">naive bayes algorithm</data>
+  <data key="d13">method_naive_bayes_algorithm</data>
+  <data key="d12">algorithm</data>
+  <data key="d6">method</data>
+  <data key="d7">2025-11-01T08:11:41.520434</data>
+</node>
+<node id="method_prediction_algorithm">
+  <data key="d9">prediction algorithm</data>
+  <data key="d13">method_prediction_algorithm</data>
+  <data key="d12">algorithm</data>
+  <data key="d6">method</data>
+  <data key="d7">2025-11-01T08:11:41.520452</data>
+</node>
+<node id="method_naive_bayes_method">
+  <data key="d9">naive bayes method</data>
+  <data key="d13">method_naive_bayes_method</data>
+  <data key="d12">algorithm</data>
+  <data key="d6">method</data>
+  <data key="d7">2025-11-01T08:11:41.520467</data>
+</node>
+<node id="dataset_squad">
+  <data key="d9">squad</data>
+  <data key="d14">dataset_squad</data>
+  <data key="d6">dataset</data>
+  <data key="d7">2025-11-01T08:11:41.520482</data>
+</node>
+<node id="dataset_kddcup99">
+  <data key="d9">KDDCUP99</data>
+  <data key="d14">dataset_kddcup99</data>
+  <data key="d6">dataset</data>
+  <data key="d7">2025-11-01T08:11:41.520498</data>
+</node>
+<node id="paper_test2">
+  <data key="d0">paper_test2</data>
+  <data key="d1">Advanced Neural Networks for Security</data>
+  <data key="d2">Using neural networks for intrusion detection</data>
+  <data key="d3"></data>
+  <data key="d4"></data>
+  <data key="d5"></data>
+  <data key="d6">paper</data>
+  <data key="d7">2025-11-01T08:11:41.524108</data>
+  <data key="d8">[{"title": "Introduction", "text": "Neural networks are powerful."}]</data>
+</node>
+<node id="concept_neural_networks">
+  <data key="d9">neural networks</data>
+  <data key="d10">concept_neural_networks</data>
+  <data key="d11">4</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.525026</data>
+</node>
+<node id="concept_networks_for">
+  <data key="d9">networks for</data>
+  <data key="d10">concept_networks_for</data>
+  <data key="d11">2</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.525060</data>
+</node>
+<node id="concept_for_security">
+  <data key="d9">for security</data>
+  <data key="d10">concept_for_security</data>
+  <data key="d11">2</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.525072</data>
+</node>
+<node id="concept_neural_networks_for">
+  <data key="d9">neural networks for</data>
+  <data key="d10">concept_neural_networks_for</data>
+  <data key="d11">2</data>
+  <data key="d12">domain_concept</data>
+  <data key="d6">concept</data>
+  <data key="d7">2025-11-01T08:11:41.525081</data>
+</node>
+<edge source="paper_unknown_1515" target="concept_denial_of" id="0">
+  <data key="d15">38</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.519891</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_of_service" id="0">
+  <data key="d15">36</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.519948</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_denial_of_service" id="0">
+  <data key="d15">36</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.519973</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_distributed_denial" id="0">
+  <data key="d15">30</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.519993</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_distributed_denial_of" id="0">
+  <data key="d15">30</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.520022</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_ddos_attacks" id="0">
+  <data key="d15">22</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.520041</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_cloud_computing" id="0">
+  <data key="d15">21</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.520057</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_in_the" id="0">
+  <data key="d15">17</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.520073</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_the_cloud" id="0">
+  <data key="d15">16</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.520089</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_to_the" id="0">
+  <data key="d15">15</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.520107</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_service_ddos" id="0">
+  <data key="d15">14</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.520123</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_of_service_ddos" id="0">
+  <data key="d15">14</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.520138</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_of_the" id="0">
+  <data key="d15">13</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.520154</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_the_server" id="0">
+  <data key="d15">12</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.520169</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_on_the" id="0">
+  <data key="d15">12</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.520185</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_naive_bayes" id="0">
+  <data key="d15">12</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.520208</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_a_distributed" id="0">
+  <data key="d15">10</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.520226</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_cloud_based" id="0">
+  <data key="d15">10</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.520241</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_service_attack" id="0">
+  <data key="d15">10</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.520255</data>
+</edge>
+<edge source="paper_unknown_1515" target="concept_machine_learning" id="0">
+  <data key="d15">10</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.520269</data>
+</edge>
+<edge source="paper_unknown_1515" target="method_machine_learning" id="0">
+  <data key="d16">uses_method</data>
+  <data key="d17">2025-11-01T08:11:41.520290</data>
+</edge>
+<edge source="paper_unknown_1515" target="method_random_forest" id="0">
+  <data key="d16">uses_method</data>
+  <data key="d17">2025-11-01T08:11:41.520310</data>
+</edge>
+<edge source="paper_unknown_1515" target="method_classification" id="0">
+  <data key="d16">uses_method</data>
+  <data key="d17">2025-11-01T08:11:41.520328</data>
+</edge>
+<edge source="paper_unknown_1515" target="method_svm" id="0">
+  <data key="d16">uses_method</data>
+  <data key="d17">2025-11-01T08:11:41.520345</data>
+</edge>
+<edge source="paper_unknown_1515" target="method_regression" id="0">
+  <data key="d16">uses_method</data>
+  <data key="d17">2025-11-01T08:11:41.520362</data>
+</edge>
+<edge source="paper_unknown_1515" target="method_naive_bayes" id="0">
+  <data key="d16">uses_method</data>
+  <data key="d17">2025-11-01T08:11:41.520380</data>
+</edge>
+<edge source="paper_unknown_1515" target="method_reinforcement_learning" id="0">
+  <data key="d16">uses_method</data>
+  <data key="d17">2025-11-01T08:11:41.520395</data>
+</edge>
+<edge source="paper_unknown_1515" target="method_deep_learning" id="0">
+  <data key="d16">uses_method</data>
+  <data key="d17">2025-11-01T08:11:41.520411</data>
+</edge>
+<edge source="paper_unknown_1515" target="method_bayes_method" id="0">
+  <data key="d16">uses_method</data>
+  <data key="d17">2025-11-01T08:11:41.520427</data>
+</edge>
+<edge source="paper_unknown_1515" target="method_naive_bayes_algorithm" id="0">
+  <data key="d16">uses_method</data>
+  <data key="d17">2025-11-01T08:11:41.520442</data>
+</edge>
+<edge source="paper_unknown_1515" target="method_prediction_algorithm" id="0">
+  <data key="d16">uses_method</data>
+  <data key="d17">2025-11-01T08:11:41.520461</data>
+</edge>
+<edge source="paper_unknown_1515" target="method_naive_bayes_method" id="0">
+  <data key="d16">uses_method</data>
+  <data key="d17">2025-11-01T08:11:41.520475</data>
+</edge>
+<edge source="paper_unknown_1515" target="dataset_squad" id="0">
+  <data key="d16">uses_dataset</data>
+  <data key="d17">2025-11-01T08:11:41.520491</data>
+</edge>
+<edge source="paper_unknown_1515" target="dataset_kddcup99" id="0">
+  <data key="d16">uses_dataset</data>
+  <data key="d17">2025-11-01T08:11:41.520507</data>
+</edge>
+<edge source="concept_denial_of" target="concept_of_service" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525487</data>
+</edge>
+<edge source="concept_denial_of" target="concept_denial_of_service" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525513</data>
+</edge>
+<edge source="concept_denial_of" target="concept_distributed_denial" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525526</data>
+</edge>
+<edge source="concept_denial_of" target="concept_distributed_denial_of" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525536</data>
+</edge>
+<edge source="concept_denial_of" target="concept_ddos_attacks" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525545</data>
+</edge>
+<edge source="concept_denial_of" target="concept_cloud_computing" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525554</data>
+</edge>
+<edge source="concept_denial_of" target="concept_in_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525563</data>
+</edge>
+<edge source="concept_denial_of" target="concept_the_cloud" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525572</data>
+</edge>
+<edge source="concept_denial_of" target="concept_to_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525580</data>
+</edge>
+<edge source="concept_denial_of" target="concept_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525589</data>
+</edge>
+<edge source="concept_denial_of" target="concept_of_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525598</data>
+</edge>
+<edge source="concept_denial_of" target="concept_of_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525608</data>
+</edge>
+<edge source="concept_denial_of" target="concept_the_server" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525616</data>
+</edge>
+<edge source="concept_denial_of" target="concept_on_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525626</data>
+</edge>
+<edge source="concept_denial_of" target="concept_naive_bayes" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525635</data>
+</edge>
+<edge source="concept_denial_of" target="concept_a_distributed" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525644</data>
+</edge>
+<edge source="concept_denial_of" target="concept_cloud_based" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525653</data>
+</edge>
+<edge source="concept_denial_of" target="concept_service_attack" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525662</data>
+</edge>
+<edge source="concept_denial_of" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525671</data>
+</edge>
+<edge source="concept_of_service" target="concept_denial_of_service" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525705</data>
+</edge>
+<edge source="concept_of_service" target="concept_distributed_denial" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525715</data>
+</edge>
+<edge source="concept_of_service" target="concept_distributed_denial_of" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525725</data>
+</edge>
+<edge source="concept_of_service" target="concept_ddos_attacks" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525735</data>
+</edge>
+<edge source="concept_of_service" target="concept_cloud_computing" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525744</data>
+</edge>
+<edge source="concept_of_service" target="concept_in_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525754</data>
+</edge>
+<edge source="concept_of_service" target="concept_the_cloud" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525764</data>
+</edge>
+<edge source="concept_of_service" target="concept_to_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525773</data>
+</edge>
+<edge source="concept_of_service" target="concept_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525783</data>
+</edge>
+<edge source="concept_of_service" target="concept_of_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525792</data>
+</edge>
+<edge source="concept_of_service" target="concept_of_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525802</data>
+</edge>
+<edge source="concept_of_service" target="concept_the_server" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525812</data>
+</edge>
+<edge source="concept_of_service" target="concept_on_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525821</data>
+</edge>
+<edge source="concept_of_service" target="concept_naive_bayes" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525831</data>
+</edge>
+<edge source="concept_of_service" target="concept_a_distributed" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525840</data>
+</edge>
+<edge source="concept_of_service" target="concept_cloud_based" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525850</data>
+</edge>
+<edge source="concept_of_service" target="concept_service_attack" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525859</data>
+</edge>
+<edge source="concept_of_service" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525869</data>
+</edge>
+<edge source="concept_denial_of_service" target="concept_distributed_denial" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525901</data>
+</edge>
+<edge source="concept_denial_of_service" target="concept_distributed_denial_of" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525911</data>
+</edge>
+<edge source="concept_denial_of_service" target="concept_ddos_attacks" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525921</data>
+</edge>
+<edge source="concept_denial_of_service" target="concept_cloud_computing" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525931</data>
+</edge>
+<edge source="concept_denial_of_service" target="concept_in_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525941</data>
+</edge>
+<edge source="concept_denial_of_service" target="concept_the_cloud" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525951</data>
+</edge>
+<edge source="concept_denial_of_service" target="concept_to_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525963</data>
+</edge>
+<edge source="concept_denial_of_service" target="concept_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525973</data>
+</edge>
+<edge source="concept_denial_of_service" target="concept_of_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525984</data>
+</edge>
+<edge source="concept_denial_of_service" target="concept_of_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.525995</data>
+</edge>
+<edge source="concept_denial_of_service" target="concept_the_server" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526005</data>
+</edge>
+<edge source="concept_denial_of_service" target="concept_on_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526016</data>
+</edge>
+<edge source="concept_denial_of_service" target="concept_naive_bayes" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526026</data>
+</edge>
+<edge source="concept_denial_of_service" target="concept_a_distributed" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526037</data>
+</edge>
+<edge source="concept_denial_of_service" target="concept_cloud_based" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526047</data>
+</edge>
+<edge source="concept_denial_of_service" target="concept_service_attack" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526057</data>
+</edge>
+<edge source="concept_denial_of_service" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526068</data>
+</edge>
+<edge source="concept_distributed_denial" target="concept_distributed_denial_of" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526103</data>
+</edge>
+<edge source="concept_distributed_denial" target="concept_ddos_attacks" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526114</data>
+</edge>
+<edge source="concept_distributed_denial" target="concept_cloud_computing" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526124</data>
+</edge>
+<edge source="concept_distributed_denial" target="concept_in_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526134</data>
+</edge>
+<edge source="concept_distributed_denial" target="concept_the_cloud" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526147</data>
+</edge>
+<edge source="concept_distributed_denial" target="concept_to_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526158</data>
+</edge>
+<edge source="concept_distributed_denial" target="concept_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526170</data>
+</edge>
+<edge source="concept_distributed_denial" target="concept_of_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526181</data>
+</edge>
+<edge source="concept_distributed_denial" target="concept_of_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526192</data>
+</edge>
+<edge source="concept_distributed_denial" target="concept_the_server" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526203</data>
+</edge>
+<edge source="concept_distributed_denial" target="concept_on_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526214</data>
+</edge>
+<edge source="concept_distributed_denial" target="concept_naive_bayes" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526226</data>
+</edge>
+<edge source="concept_distributed_denial" target="concept_a_distributed" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526238</data>
+</edge>
+<edge source="concept_distributed_denial" target="concept_cloud_based" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526249</data>
+</edge>
+<edge source="concept_distributed_denial" target="concept_service_attack" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526261</data>
+</edge>
+<edge source="concept_distributed_denial" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526271</data>
+</edge>
+<edge source="concept_distributed_denial_of" target="concept_ddos_attacks" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526309</data>
+</edge>
+<edge source="concept_distributed_denial_of" target="concept_cloud_computing" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526320</data>
+</edge>
+<edge source="concept_distributed_denial_of" target="concept_in_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526332</data>
+</edge>
+<edge source="concept_distributed_denial_of" target="concept_the_cloud" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526345</data>
+</edge>
+<edge source="concept_distributed_denial_of" target="concept_to_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526358</data>
+</edge>
+<edge source="concept_distributed_denial_of" target="concept_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526371</data>
+</edge>
+<edge source="concept_distributed_denial_of" target="concept_of_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526384</data>
+</edge>
+<edge source="concept_distributed_denial_of" target="concept_of_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526397</data>
+</edge>
+<edge source="concept_distributed_denial_of" target="concept_the_server" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526408</data>
+</edge>
+<edge source="concept_distributed_denial_of" target="concept_on_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526421</data>
+</edge>
+<edge source="concept_distributed_denial_of" target="concept_naive_bayes" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526434</data>
+</edge>
+<edge source="concept_distributed_denial_of" target="concept_a_distributed" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526447</data>
+</edge>
+<edge source="concept_distributed_denial_of" target="concept_cloud_based" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526460</data>
+</edge>
+<edge source="concept_distributed_denial_of" target="concept_service_attack" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526472</data>
+</edge>
+<edge source="concept_distributed_denial_of" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526484</data>
+</edge>
+<edge source="concept_ddos_attacks" target="concept_cloud_computing" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526523</data>
+</edge>
+<edge source="concept_ddos_attacks" target="concept_in_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526536</data>
+</edge>
+<edge source="concept_ddos_attacks" target="concept_the_cloud" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526548</data>
+</edge>
+<edge source="concept_ddos_attacks" target="concept_to_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526561</data>
+</edge>
+<edge source="concept_ddos_attacks" target="concept_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526574</data>
+</edge>
+<edge source="concept_ddos_attacks" target="concept_of_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526588</data>
+</edge>
+<edge source="concept_ddos_attacks" target="concept_of_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526601</data>
+</edge>
+<edge source="concept_ddos_attacks" target="concept_the_server" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526615</data>
+</edge>
+<edge source="concept_ddos_attacks" target="concept_on_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526627</data>
+</edge>
+<edge source="concept_ddos_attacks" target="concept_naive_bayes" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526641</data>
+</edge>
+<edge source="concept_ddos_attacks" target="concept_a_distributed" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526653</data>
+</edge>
+<edge source="concept_ddos_attacks" target="concept_cloud_based" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526666</data>
+</edge>
+<edge source="concept_ddos_attacks" target="concept_service_attack" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526679</data>
+</edge>
+<edge source="concept_ddos_attacks" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526691</data>
+</edge>
+<edge source="concept_cloud_computing" target="concept_in_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526734</data>
+</edge>
+<edge source="concept_cloud_computing" target="concept_the_cloud" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526762</data>
+</edge>
+<edge source="concept_cloud_computing" target="concept_to_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526776</data>
+</edge>
+<edge source="concept_cloud_computing" target="concept_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526789</data>
+</edge>
+<edge source="concept_cloud_computing" target="concept_of_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526803</data>
+</edge>
+<edge source="concept_cloud_computing" target="concept_of_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526816</data>
+</edge>
+<edge source="concept_cloud_computing" target="concept_the_server" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526830</data>
+</edge>
+<edge source="concept_cloud_computing" target="concept_on_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526844</data>
+</edge>
+<edge source="concept_cloud_computing" target="concept_naive_bayes" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526858</data>
+</edge>
+<edge source="concept_cloud_computing" target="concept_a_distributed" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526871</data>
+</edge>
+<edge source="concept_cloud_computing" target="concept_cloud_based" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526884</data>
+</edge>
+<edge source="concept_cloud_computing" target="concept_service_attack" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526897</data>
+</edge>
+<edge source="concept_cloud_computing" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526909</data>
+</edge>
+<edge source="concept_in_the" target="concept_the_cloud" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526953</data>
+</edge>
+<edge source="concept_in_the" target="concept_to_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526967</data>
+</edge>
+<edge source="concept_in_the" target="concept_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526982</data>
+</edge>
+<edge source="concept_in_the" target="concept_of_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.526996</data>
+</edge>
+<edge source="concept_in_the" target="concept_of_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527009</data>
+</edge>
+<edge source="concept_in_the" target="concept_the_server" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527023</data>
+</edge>
+<edge source="concept_in_the" target="concept_on_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527036</data>
+</edge>
+<edge source="concept_in_the" target="concept_naive_bayes" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527049</data>
+</edge>
+<edge source="concept_in_the" target="concept_a_distributed" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527063</data>
+</edge>
+<edge source="concept_in_the" target="concept_cloud_based" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527078</data>
+</edge>
+<edge source="concept_in_the" target="concept_service_attack" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527092</data>
+</edge>
+<edge source="concept_in_the" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527105</data>
+</edge>
+<edge source="concept_the_cloud" target="concept_to_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527246</data>
+</edge>
+<edge source="concept_the_cloud" target="concept_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527284</data>
+</edge>
+<edge source="concept_the_cloud" target="concept_of_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527311</data>
+</edge>
+<edge source="concept_the_cloud" target="concept_of_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527336</data>
+</edge>
+<edge source="concept_the_cloud" target="concept_the_server" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527361</data>
+</edge>
+<edge source="concept_the_cloud" target="concept_on_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527385</data>
+</edge>
+<edge source="concept_the_cloud" target="concept_naive_bayes" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527409</data>
+</edge>
+<edge source="concept_the_cloud" target="concept_a_distributed" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527432</data>
+</edge>
+<edge source="concept_the_cloud" target="concept_cloud_based" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527456</data>
+</edge>
+<edge source="concept_the_cloud" target="concept_service_attack" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527480</data>
+</edge>
+<edge source="concept_the_cloud" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527504</data>
+</edge>
+<edge source="concept_to_the" target="concept_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527576</data>
+</edge>
+<edge source="concept_to_the" target="concept_of_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527599</data>
+</edge>
+<edge source="concept_to_the" target="concept_of_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527628</data>
+</edge>
+<edge source="concept_to_the" target="concept_the_server" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527652</data>
+</edge>
+<edge source="concept_to_the" target="concept_on_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527675</data>
+</edge>
+<edge source="concept_to_the" target="concept_naive_bayes" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527699</data>
+</edge>
+<edge source="concept_to_the" target="concept_a_distributed" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527724</data>
+</edge>
+<edge source="concept_to_the" target="concept_cloud_based" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527748</data>
+</edge>
+<edge source="concept_to_the" target="concept_service_attack" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527770</data>
+</edge>
+<edge source="concept_to_the" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527793</data>
+</edge>
+<edge source="concept_service_ddos" target="concept_of_service_ddos" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527864</data>
+</edge>
+<edge source="concept_service_ddos" target="concept_of_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527888</data>
+</edge>
+<edge source="concept_service_ddos" target="concept_the_server" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527911</data>
+</edge>
+<edge source="concept_service_ddos" target="concept_on_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527935</data>
+</edge>
+<edge source="concept_service_ddos" target="concept_naive_bayes" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527959</data>
+</edge>
+<edge source="concept_service_ddos" target="concept_a_distributed" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.527983</data>
+</edge>
+<edge source="concept_service_ddos" target="concept_cloud_based" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528009</data>
+</edge>
+<edge source="concept_service_ddos" target="concept_service_attack" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528032</data>
+</edge>
+<edge source="concept_service_ddos" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528056</data>
+</edge>
+<edge source="concept_of_service_ddos" target="concept_of_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528128</data>
+</edge>
+<edge source="concept_of_service_ddos" target="concept_the_server" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528152</data>
+</edge>
+<edge source="concept_of_service_ddos" target="concept_on_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528176</data>
+</edge>
+<edge source="concept_of_service_ddos" target="concept_naive_bayes" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528200</data>
+</edge>
+<edge source="concept_of_service_ddos" target="concept_a_distributed" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528225</data>
+</edge>
+<edge source="concept_of_service_ddos" target="concept_cloud_based" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528249</data>
+</edge>
+<edge source="concept_of_service_ddos" target="concept_service_attack" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528274</data>
+</edge>
+<edge source="concept_of_service_ddos" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528298</data>
+</edge>
+<edge source="concept_of_the" target="concept_the_server" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528373</data>
+</edge>
+<edge source="concept_of_the" target="concept_on_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528399</data>
+</edge>
+<edge source="concept_of_the" target="concept_naive_bayes" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528424</data>
+</edge>
+<edge source="concept_of_the" target="concept_a_distributed" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528449</data>
+</edge>
+<edge source="concept_of_the" target="concept_cloud_based" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528475</data>
+</edge>
+<edge source="concept_of_the" target="concept_service_attack" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528500</data>
+</edge>
+<edge source="concept_of_the" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528525</data>
+</edge>
+<edge source="concept_the_server" target="concept_on_the" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528601</data>
+</edge>
+<edge source="concept_the_server" target="concept_naive_bayes" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528628</data>
+</edge>
+<edge source="concept_the_server" target="concept_a_distributed" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528654</data>
+</edge>
+<edge source="concept_the_server" target="concept_cloud_based" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528681</data>
+</edge>
+<edge source="concept_the_server" target="concept_service_attack" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528708</data>
+</edge>
+<edge source="concept_the_server" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528734</data>
+</edge>
+<edge source="concept_on_the" target="concept_naive_bayes" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528812</data>
+</edge>
+<edge source="concept_on_the" target="concept_a_distributed" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528839</data>
+</edge>
+<edge source="concept_on_the" target="concept_cloud_based" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528866</data>
+</edge>
+<edge source="concept_on_the" target="concept_service_attack" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528893</data>
+</edge>
+<edge source="concept_on_the" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.528948</data>
+</edge>
+<edge source="concept_naive_bayes" target="concept_a_distributed" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.529085</data>
+</edge>
+<edge source="concept_naive_bayes" target="concept_cloud_based" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.529117</data>
+</edge>
+<edge source="concept_naive_bayes" target="concept_service_attack" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.529140</data>
+</edge>
+<edge source="concept_naive_bayes" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.529158</data>
+</edge>
+<edge source="concept_a_distributed" target="concept_cloud_based" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.529220</data>
+</edge>
+<edge source="concept_a_distributed" target="concept_service_attack" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.529240</data>
+</edge>
+<edge source="concept_a_distributed" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.529260</data>
+</edge>
+<edge source="concept_cloud_based" target="concept_service_attack" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.529320</data>
+</edge>
+<edge source="concept_cloud_based" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.529341</data>
+</edge>
+<edge source="concept_service_attack" target="concept_machine_learning" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.529404</data>
+</edge>
+<edge source="paper_test2" target="concept_neural_networks" id="0">
+  <data key="d15">4</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.525050</data>
+</edge>
+<edge source="paper_test2" target="concept_networks_for" id="0">
+  <data key="d15">2</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.525068</data>
+</edge>
+<edge source="paper_test2" target="concept_for_security" id="0">
+  <data key="d15">2</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.525078</data>
+</edge>
+<edge source="paper_test2" target="concept_neural_networks_for" id="0">
+  <data key="d15">2</data>
+  <data key="d16">discusses_concept</data>
+  <data key="d17">2025-11-01T08:11:41.525086</data>
+</edge>
+<edge source="paper_test2" target="method_deep_learning" id="0">
+  <data key="d16">uses_method</data>
+  <data key="d17">2025-11-01T08:11:41.525099</data>
+</edge>
+<edge source="concept_neural_networks" target="concept_networks_for" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.529499</data>
+</edge>
+<edge source="concept_neural_networks" target="concept_for_security" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.529508</data>
+</edge>
+<edge source="concept_neural_networks" target="concept_neural_networks_for" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.529517</data>
+</edge>
+<edge source="concept_networks_for" target="concept_for_security" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.529527</data>
+</edge>
+<edge source="concept_networks_for" target="concept_neural_networks_for" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.529536</data>
+</edge>
+<edge source="concept_for_security" target="concept_neural_networks_for" id="0">
+  <data key="d18">1.0</data>
+  <data key="d16">related_to</data>
+  <data key="d17">2025-11-01T08:11:41.529546</data>
+</edge>
+</graph></graphml>

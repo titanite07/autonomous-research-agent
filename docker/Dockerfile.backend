@@ -1,0 +1,43 @@
+# Backend Dockerfile for Autonomous Research Agent API
+FROM python:3.11-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    build-essential \
+    libpq-dev \
+    curl \
+    wget \
+    chromium \
+    chromium-driver && rm -rf /var/lib/apt/lists/*
+
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PIP_NO_CACHE_DIR=1 \
+    DEBIAN_FRONTEND=noninteractive
+
+COPY requirements.txt .
+
+RUN pip install --upgrade pip && \
+    pip install -r requirements.txt
+
+COPY api/ ./api/
+COPY agents/ ./agents/
+COPY core/ ./core/
+COPY scrapers/ ./scrapers/
+COPY config.py ./
+COPY llm_config.py ./
+COPY main.py ./
+COPY autogen_research_system.py ./
+
+RUN mkdir -p chroma_db pdf_cache outputs citation_analysis_output
+
+EXPOSE 8000
+
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+    CMD curl -f http://localhost:8000/health || exit 1
+
+CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+

@@ -1,0 +1,115 @@
+# Docker ignore file for Autonomous Research Agent
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Database files (will be in volumes)
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+*.log
+research_agent.log
+
+# Test files and directories
+test_*.py
+tests/
+pytest_cache/
+.pytest_cache/
+test_cache/
+test_chroma_db/
+test_vector_db_*/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment files (secrets should not be in image)
+.env
+.env.local
+.env.*.local
+
+# Git
+.git/
+.gitignore
+
+# Documentation (can be added selectively if needed)
+*.md
+markdowns/
+
+# Node modules (for backend, frontend has its own Dockerfile)
+node_modules/
+package-lock.json
+package.json
+
+# Frontend directory (handled by separate Dockerfile)
+frontend/
+
+# Output directories (will be in volumes)
+outputs/
+output/
+pdf_cache/
+chroma_db/
+vector_db/
+citation_analysis_output/
+
+# Temporary files
+*.tmp
+temp-*/
+.cache/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# MyPy
+.mypy_cache/
+
+# Jupyter notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+# Setup and batch files
+*.bat
+*.ps1
+*.sh
+setup-react.ps1
+start-dev.ps1
+
+# Example and demo files
+demo_*.py
+example*.py
+verify_*.py
+show_*.py
+quick_test_*.py
+
+# Specific test files
+test_analysis.db
+test_results.log
+shang2024.pdf
+shang2024_analysis.json
+
+# Docker files (not needed in container)
+Dockerfile*
+docker-compose*.yml
+.dockerignore

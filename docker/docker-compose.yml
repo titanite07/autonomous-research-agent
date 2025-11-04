@@ -1,0 +1,89 @@
+services:
+  # Backend API Service
+  backend:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.backend
+    container_name: research-agent-backend
+    env_file:
+      - ../.env
+    ports:
+      - "8000:8000"
+    environment:
+      # API Keys (set these in .env file)
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - SPRINGER_API_KEY=${SPRINGER_API_KEY}
+      - SEMANTIC_SCHOLAR_API_KEY=${SEMANTIC_SCHOLAR_API_KEY}
+      
+      # Database Configuration
+      - DATABASE_URL=sqlite:///./data/research_agent.db
+      
+      # Application Settings
+      - ENVIRONMENT=production
+      - LOG_LEVEL=INFO
+      - MAX_WORKERS=4
+      
+      # CORS Settings
+      - CORS_ORIGINS=http://localhost:3000,http://frontend:3000
+    volumes:
+      # Persist SQLite database
+      - ../data:/app/data
+      # Persist ChromaDB vector store
+      - ../chroma_db:/app/chroma_db
+      # Persist PDF cache
+      - ../pdf_cache:/app/pdf_cache
+      # Persist outputs
+      - ../outputs:/app/outputs
+      # Persist citation analysis
+      - ../citation_analysis_output:/app/citation_analysis_output
+    networks:
+      - research-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Frontend Service
+  frontend:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.frontend
+      args:
+        - NEXT_PUBLIC_API_URL=http://localhost:8000
+    container_name: research-agent-frontend
+    env_file:
+      - ../.env
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://backend:8000
+      - NODE_ENV=production
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - research-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  research-network:
+    driver: bridge
+
+volumes:
+  # Named volumes for data persistence
+  data:
+  chroma_db:
+  pdf_cache:
+  outputs:
+  citation_analysis_output:
