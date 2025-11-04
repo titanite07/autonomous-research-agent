@@ -9,7 +9,7 @@ from fastapi.responses import JSONResponse
 import uvicorn
 import os
 
-from api.routes import search, analysis, websocket, history, analytics, reports, chat
+from api.routes import search, analysis, websocket, history, analytics, reports, chat, auth
 from api.middleware.auth import add_auth_middleware
 from api.database import init_db, check_db_connection
 
@@ -35,6 +35,7 @@ app.add_middleware(
 # add_auth_middleware(app)  # Uncomment when auth is implemented
 
 # Include routers
+app.include_router(auth.router, prefix="/api/v1/auth", tags=["authentication"])
 app.include_router(search.router, prefix="/api/v1", tags=["search"])
 app.include_router(analysis.router, prefix="/api/v1", tags=["analysis"])
 app.include_router(history.router, prefix="/api/v1", tags=["history"])

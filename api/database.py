@@ -1,6 +1,6 @@
 """
 Database configuration and session management.
-Uses SQLAlchemy with SQLite for persistence.
+Supports both SQLite (development) and PostgreSQL (production).
 """
 
 from sqlalchemy import create_engine
@@ -9,14 +9,24 @@ from sqlalchemy.orm import sessionmaker, Session
 from typing import Generator
 import os
 
-# Database URL - SQLite for simplicity (no server needed)
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./research_agent.db")
+# Database URL - PostgreSQL for production, SQLite for development
+DATABASE_URL = os.getenv(
+    "DATABASE_URL",
+    "sqlite:///./research_agent.db"  # Default to SQLite for local dev
+)
 
-# Create engine
+# Fix for Render.com - they use postgres:// instead of postgresql://
+if DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
+
+# Create engine with appropriate settings
+is_sqlite = "sqlite" in DATABASE_URL
 engine = create_engine(
     DATABASE_URL,
-    connect_args={"check_same_thread": False} if "sqlite" in DATABASE_URL else {},
+    connect_args={"check_same_thread": False} if is_sqlite else {},
     pool_pre_ping=True,
+    pool_size=10 if not is_sqlite else 5,
+    max_overflow=20 if not is_sqlite else 10,
     echo=False  # Set to True for SQL debugging
 )
 

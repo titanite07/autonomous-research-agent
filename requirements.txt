@@ -10,6 +10,12 @@ langgraph>=0.0.20
 # DATABASE & ORM
 sqlalchemy>=2.0.0
 alembic>=1.13.0
+psycopg2-binary>=2.9.9  # PostgreSQL adapter
+
+# AUTHENTICATION & SECURITY
+python-jose[cryptography]>=3.3.0  # JWT tokens
+passlib[bcrypt]>=1.7.4  # Password hashing
+python-multipart>=0.0.6  # Form data parsing
 
 # VECTOR STORES & EMBEDDINGS
 chromadb>=0.4.0
