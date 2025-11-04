@@ -19,7 +19,9 @@ services:
       - key: SEMANTIC_SCHOLAR_API_KEY
         sync: false
       - key: DATABASE_URL
-        value: sqlite:///./data/research_agent.db
+        value: sqlite:////tmp/research_agent.db
+      - key: GROQ_API_KEY
+        sync: false
 
   # Frontend Service (Static Site or separate web service)
   - type: web
